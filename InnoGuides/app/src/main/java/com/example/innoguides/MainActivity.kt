@@ -13,7 +13,11 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun buttonClick(view: View) {
-        Toast.makeText(this, "Button", Toast.LENGTH_SHORT).show()
+        Toast.makeText(this, "Loading of the map", Toast.LENGTH_SHORT).show()
+
+        val loc = Intent(this, Location::class.java);
+        startActivity(loc);
+
         val intent = Intent(this, MapsActivity::class.java)
         startActivity(intent)
     }
