@@ -1,5 +1,6 @@
 package com.example.innoguides
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
@@ -32,6 +33,7 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
         mMap.addMarker(MarkerOptions().position(inno).title("Marker in Innopolis"))
         mMap.moveCamera(CameraUpdateFactory.newLatLng(inno))
         moveCamre(inno)
+
     }
 
     fun moveCamre(latLng: LatLng){
