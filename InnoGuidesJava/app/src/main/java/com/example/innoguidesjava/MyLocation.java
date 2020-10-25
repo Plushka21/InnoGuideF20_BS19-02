@@ -98,7 +98,7 @@ public class MyLocation extends AppCompatActivity
                     break;
                 }
             }
-            Toast.makeText(getApplicationContext(), String.valueOf(places.get(index).getRating()), Toast.LENGTH_SHORT).show();
+            showDialog(name, places.get(index).getRating());
             return false;
         }
         });
@@ -176,6 +176,11 @@ public class MyLocation extends AppCompatActivity
     void moveCamera(LatLng latLng){
         float zoom = 16f;
         map.moveCamera(CameraUpdateFactory.newLatLngZoom(latLng, zoom));
+    }
+
+    public void showDialog(String name, double rating) {
+        InfoWindow dialog = new InfoWindow(name, rating);
+        dialog.show(getSupportFragmentManager(), "custom");
     }
 
 }

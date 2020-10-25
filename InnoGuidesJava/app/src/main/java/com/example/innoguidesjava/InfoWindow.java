@@ -12,8 +12,8 @@ import android.os.Bundle;
 
 public class InfoWindow extends DialogFragment {
 
-    private String name;
-    private double rating;
+    private final String name;
+    private final double rating;
 
     public InfoWindow(String name, double rating){
         this.name=name;
