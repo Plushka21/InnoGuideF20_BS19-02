@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
                     Intent loc = new Intent(MainActivity.this, MyLocation.class);
                     startActivity(loc);
                 }
-                else setContentView(R.layout.ne_rabotaet);
+                else Toast.makeText(getApplicationContext(),"Wrong email or password",Toast.LENGTH_SHORT).show();
             }
         });
 
