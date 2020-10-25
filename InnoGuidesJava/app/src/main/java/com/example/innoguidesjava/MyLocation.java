@@ -7,9 +7,11 @@ import com.google.android.gms.maps.GoogleMap.OnMyLocationClickListener;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 
 import android.Manifest;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.location.Location;
 import android.os.Bundle;
@@ -18,6 +20,9 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
+
+import android.view.View;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import org.json.JSONException;
@@ -74,13 +79,29 @@ public class MyLocation extends AppCompatActivity
         for (int i = 0; i < places.size(); i++){
             map.addMarker(new MarkerOptions()
                     .position(new LatLng(places.get(i).getC1(), places.get(i).getC2()))
-            .title(places.get(i).getName()));
+                    .title(places.get(i).getName()));
         }
 
         LatLng inno = new LatLng(55.75, 48.73);
         map.addMarker(new MarkerOptions().position(inno).title("Marker in Innopolis"));
         map.moveCamera(CameraUpdateFactory.newLatLng(inno));
         moveCamera(inno);
+
+        map.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener(){
+        @Override
+        public boolean onMarkerClick(Marker marker) {
+            String name = marker.getTitle();
+            int index = 0;
+            for (int i = 0; i < places.size(); i++){
+                if (places.get(i).getName().equals(name)){
+                    index = i;
+                    break;
+                }
+            }
+            Toast.makeText(getApplicationContext(), String.valueOf(places.get(index).getRating()), Toast.LENGTH_SHORT).show();
+            return false;
+        }
+        });
     }
 
     /**
@@ -156,4 +177,5 @@ public class MyLocation extends AppCompatActivity
         float zoom = 16f;
         map.moveCamera(CameraUpdateFactory.newLatLngZoom(latLng, zoom));
     }
+
 }

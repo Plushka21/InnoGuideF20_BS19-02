@@ -1,6 +1,8 @@
 package com.example.innoguidesjava;
 
 import androidx.fragment.app.FragmentActivity;
+
+import android.content.Intent;
 import android.os.Bundle;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -19,9 +21,7 @@ import java.util.List;
 
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback {
 
-    private GoogleMap mMap;
-
-
+    private GoogleMap map;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,13 +32,14 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
+
     }
 
     @Override
     public void onMapReady(GoogleMap googleMap) {
-        mMap = googleMap;
+        map = googleMap;
 
-        LatLng inno = new LatLng(55.752994, 48.744084);
+        //LatLng inno = new LatLng(55.752994, 48.744084);
         //Marker m = mMap.addMarker(new MarkerOptions().position(inno).title("Marker in Innopolis"));
         //mMap.moveCamera(CameraUpdateFactory.newLatLng(inno));
         //moveCamera(inno);
@@ -46,6 +47,8 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
     void moveCamera(LatLng latLng){
         float zoom = 16f;
-        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(latLng, zoom));
+        map.moveCamera(CameraUpdateFactory.newLatLngZoom(latLng, zoom));
     }
+
+
 }
