@@ -20,6 +20,12 @@ import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 import android.widget.Toast;
 
+import org.json.JSONException;
+
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+
 public class MyLocation extends AppCompatActivity
         implements
         OnMyLocationButtonClickListener,
@@ -40,9 +46,16 @@ public class MyLocation extends AppCompatActivity
      */
     private boolean permissionDenied = false;
     private GoogleMap map;
+    private List<Place> places;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        places = new ArrayList<>();
+        try{
+            places = JSONHelper.readPlaceJSONFile(this);
+        } catch (JSONException | IOException e) {
+            e.printStackTrace();
+        }
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my_location);
 
@@ -58,8 +71,14 @@ public class MyLocation extends AppCompatActivity
         map.setOnMyLocationClickListener(this);
         enableMyLocation();
 
+        for (int i = 0; i < places.size(); i++){
+            map.addMarker(new MarkerOptions()
+                    .position(new LatLng(places.get(i).getC1(), places.get(i).getC2()))
+            .title(places.get(i).getName()));
+        }
+
         LatLng inno = new LatLng(55.75, 48.73);
-        map.addMarker(new MarkerOptions().position(inno).title("Marker in Sydney"));
+        map.addMarker(new MarkerOptions().position(inno).title("Marker in Innopolis"));
         map.moveCamera(CameraUpdateFactory.newLatLng(inno));
         moveCamera(inno);
     }

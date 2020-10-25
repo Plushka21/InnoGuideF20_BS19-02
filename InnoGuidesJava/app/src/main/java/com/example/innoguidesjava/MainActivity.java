@@ -8,6 +8,17 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
+import com.example.innoguidesjava.R;
+
+import com.google.gson.Gson;
+
+import org.json.JSONException;
+import org.json.JSONObject;
+import org.json.JSONStringer;
+
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -19,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         email = findViewById(R.id.aEmail);
         password = findViewById(R.id.aPassword);
         Button authorize = findViewById(R.id.toAut);
@@ -27,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
         reg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(MainActivity.this,registration.class);
+                Intent intent=new Intent(MainActivity.this, registration.class);
                 startActivity(intent);
             }
         });
@@ -45,6 +57,7 @@ public class MainActivity extends AppCompatActivity {
                 else setContentView(R.layout.ne_rabotaet);
             }
         });
+        
     }
 
 }

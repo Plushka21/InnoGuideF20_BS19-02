@@ -1,0 +1,26 @@
+[
+  {
+    "astreet": "sportivnaya 126",
+    "acoordinates": "55.749040, 48.743755"
+  },
+  {
+    "astreet": "sportivnaya 110",
+    "acoordinates": "55.747844, 48.742623"
+  },
+  {
+    "astreet": "sportivnaya 107",
+    "acoordinates": "55.751387, 48.742658"
+  },
+  {
+    "astreet": "universitetskaya 1",
+    "acoordinates": "55.752994, 48.744084"
+  },
+  {
+    "astreet": "parkovaya street 1",
+    "acoordinates": "55.744227, 48.748974"
+  },
+  {
+    "astreet": "kvantoviy bulvar 1",
+    "acoordinates": "55.747976, 48.746845"
+  }
+]
