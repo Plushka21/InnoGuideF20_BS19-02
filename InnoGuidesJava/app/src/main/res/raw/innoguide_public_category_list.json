@@ -1,0 +1,32 @@
+[
+  {
+    "cname": "supermarkets",
+    "number_of_places": 2,
+    "icon": null,
+    "colour": null
+  },
+  {
+    "cname": "sport",
+    "number_of_places": 1,
+    "icon": null,
+    "colour": null
+  },
+  {
+    "cname": "education",
+    "number_of_places": 2,
+    "icon": null,
+    "colour": null
+  },
+  {
+    "cname": "place to rest",
+    "number_of_places": 2,
+    "icon": null,
+    "colour": null
+  },
+  {
+    "cname": "pyaterochka",
+    "number_of_places": 1,
+    "icon": null,
+    "colour": null
+  }
+]

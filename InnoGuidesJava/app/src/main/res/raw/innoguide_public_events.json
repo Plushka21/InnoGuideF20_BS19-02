@@ -1,0 +1,32 @@
+[
+  {
+    "ename": "halloween",
+    "edate": "31.10.2020",
+    "etime": "19:30",
+    "event_place": "Innopolis University"
+  },
+  {
+    "ename": "open-air movie",
+    "edate": "27.09.2020",
+    "etime": "20:00",
+    "event_place": "Innopolis University"
+  },
+  {
+    "ename": "New Year‘s sales",
+    "edate": "31.12.2020",
+    "etime": "10:00",
+    "event_place": "Pyaterochka"
+  },
+  {
+    "ename": "Solo concert",
+    "edate": "20.11.2020",
+    "etime": "18:00",
+    "event_place": "ArtSpase"
+  },
+  {
+    "ename": "Club Fest",
+    "edate": "10.11.2020",
+    "etime": "17:00",
+    "event_place": "Innopolis University"
+  }
+]
