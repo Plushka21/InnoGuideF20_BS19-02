@@ -10,6 +10,8 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import com.example.innoguidesjava.R;
 
+import com.google.android.gms.maps.GoogleMap;
+import com.google.android.gms.maps.model.Marker;
 import com.google.gson.Gson;
 
 import org.json.JSONException;
@@ -57,7 +59,9 @@ public class MainActivity extends AppCompatActivity {
                 else setContentView(R.layout.ne_rabotaet);
             }
         });
-        
+
     }
+
+
 
 }
