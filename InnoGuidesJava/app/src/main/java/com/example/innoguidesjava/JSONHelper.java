@@ -21,22 +21,43 @@ import com.example.innoguidesjava.R;
 public class JSONHelper {
 
     public static List<Place> readPlaceJSONFile(Context context) throws IOException, JSONException {
-        String jsonText = readText(context, R.raw.innoguide_public_place);
+        String textPlace = readText(context, R.raw.innoguide_public_place);
+        String placePhone = readText(context, R.raw.innoguide_public_owner_contact);
+        String placeAddress = readText(context, R.raw.innoguide_public_buildings);
         List<Place> places = new ArrayList<>();
 
-        JSONArray jsonRoot = new JSONArray(jsonText);
+        JSONArray jsonRoot = new JSONArray(textPlace);
+        JSONArray phones = new JSONArray(placePhone);
+        JSONArray addresses = new JSONArray(placeAddress);
 
         for (int i = 0; i < jsonRoot.length(); i++){
-            JSONObject object = jsonRoot.getJSONObject(i);
-            String pname = object.getString("pname");
-            double rating = object.getDouble("rating");
-            String coor = object.getString("address");
+            JSONObject placeInfo = jsonRoot.getJSONObject(i);
+            String pname = placeInfo.getString("pname");
+            double rating = placeInfo.getDouble("rating");
+            String coor = placeInfo.getString("address");
             String[] c;
             c = coor.split(",");
             double c1 = Double.parseDouble(c[0]);
             double c2 = Double.parseDouble(c[1]);
 
-            Place p = new Place(pname, c1, c2);
+            String num = "";
+            for (int j = 0; j < phones.length(); j++){
+                JSONObject pNum = phones.getJSONObject(j);
+                if (pNum.getString("pname").equals(pname)){
+                    num = pNum.getString("contact_details");
+                    break;
+                }
+            }
+
+            String address = "";
+            for (int j = 0; j < addresses.length(); j++){
+                JSONObject pAd = addresses.getJSONObject(j);
+                if (pAd.getString("bcoordinates").equals(coor)){
+                    address = pAd.getString("bstreet");
+                    break;
+                }
+            }
+            Place p = new Place(pname, num, address, c1, c2);
             p.setRating(rating);
             places.add(i, p);
         }
@@ -55,3 +76,4 @@ public class JSONHelper {
         return sb.toString();
     }
 }
+

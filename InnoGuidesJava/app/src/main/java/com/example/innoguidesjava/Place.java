@@ -2,11 +2,13 @@ package com.example.innoguidesjava;
 
 public class Place {
 
-    private String name;
+    private String name, number, address;
     private double rating, c1, c2; // c1,c2 - coordinates
 
-    public Place(String name, double c1, double c2){
+    public Place(String name, String number, String address, double c1, double c2){
         this.name = name;
+        this.number = number;
+        this.address = address;
         this.c1 = c1;
         this.c2 = c2;
     }
@@ -43,4 +45,11 @@ public class Place {
         this.c2 = c2;
     }
 
+    public String getNumber() {
+        return number;
+    }
+
+    public String getAddress() {
+        return address;
+    }
 }

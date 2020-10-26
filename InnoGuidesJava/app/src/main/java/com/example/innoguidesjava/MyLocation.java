@@ -98,7 +98,7 @@ public class MyLocation extends AppCompatActivity
                     break;
                 }
             }
-            showDialog(name, places.get(index).getRating());
+            showDialog(name, places.get(index).getNumber(), places.get(index).getAddress(), places.get(index).getRating());
             return false;
         }
         });
@@ -178,9 +178,8 @@ public class MyLocation extends AppCompatActivity
         map.moveCamera(CameraUpdateFactory.newLatLngZoom(latLng, zoom));
     }
 
-    public void showDialog(String name, double rating) {
-        InfoWindow dialog = new InfoWindow(name, rating);
+    public void showDialog(String name, String number, String address, double rating) {
+        InfoWindow dialog = new InfoWindow(name, number, address, rating);
         dialog.show(getSupportFragmentManager(), "custom");
     }
-
 }

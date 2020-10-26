@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F1EEEE"
+    android:background="@android:color/white"
+    android:orientation="vertical"
     tools:context=".registration">
 
     <TextView
@@ -18,11 +19,7 @@
         android:layout_marginRight="63dp"
         android:layout_marginBottom="69dp"
         android:text="Registration"
-        android:textSize="50sp"
-        app:layout_constraintBottom_toTopOf="@+id/rEmail"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:textSize="50sp" />
 
     <EditText
         android:id="@+id/rEmail"
@@ -30,18 +27,13 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="75dp"
         android:layout_marginLeft="75dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="76dp"
         android:layout_marginRight="76dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="0dp"
         android:ems="10"
         android:hint="Email"
-        android:inputType="textEmailAddress"
-        app:layout_constraintBottom_toTopOf="@+id/rPassword"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/aut" />
+        android:inputType="textEmailAddress" />
 
     <EditText
         android:id="@+id/rPassword"
@@ -49,16 +41,26 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="75dp"
         android:layout_marginLeft="75dp"
-        android:layout_marginTop="21dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="76dp"
         android:layout_marginRight="76dp"
         android:ems="10"
         android:hint="Password"
-        android:inputType="textPassword"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/rEmail" />
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/cPassword"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="75dp"
+        android:layout_marginLeft="75dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="76dp"
+        android:layout_marginRight="76dp"
+        android:ems="10"
+        android:hint="Confirm the password"
+        android:inputType="textPassword" />
 
     <Button
         android:id="@+id/toReg"
@@ -67,28 +69,12 @@
         android:layout_height="48dp"
         android:layout_marginStart="147dp"
         android:layout_marginLeft="147dp"
-        android:layout_marginTop="21dp"
+        android:layout_marginTop="40dp"
         android:layout_marginEnd="146dp"
         android:layout_marginRight="146dp"
         android:text="to register"
         android:textColor="#000000"
-        app:backgroundTint="#37AF37"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cPassword" />
+        app:backgroundTint="#37AF37" />
 
-    <EditText
-        android:id="@+id/cPassword"
-        android:layout_width="260dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="21dp"
-        android:layout_marginEnd="76dp"
-        android:layout_marginRight="76dp"
-        android:ems="10"
-        android:hint="Confirm the password"
-        android:inputType="textPassword"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/rPassword" />
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
 

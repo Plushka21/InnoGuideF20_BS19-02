@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F1EEEE"
+    android:background="@android:color/white"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
 
@@ -26,69 +27,83 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
-        android:id="@+id/aEmail"
-        android:layout_width="260dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="75dp"
-        android:layout_marginLeft="75dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="76dp"
-        android:layout_marginRight="76dp"
-        android:layout_marginBottom="8dp"
-        android:ems="10"
-        android:hint="Email"
-        android:inputType="textEmailAddress"
-        app:layout_constraintBottom_toTopOf="@+id/aPassword"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/aut" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:gravity="center|top"
+        android:orientation="vertical">
 
-    <EditText
-        android:id="@+id/aPassword"
-        android:layout_width="260dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="75dp"
-        android:layout_marginLeft="75dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="76dp"
-        android:layout_marginRight="76dp"
-        android:layout_marginBottom="24dp"
-        android:ems="10"
-        android:hint="Password"
-        android:inputType="textPassword"
-        app:layout_constraintBottom_toTopOf="@+id/toAut"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/aEmail" />
+        <EditText
+            android:id="@+id/aEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="75dp"
+            android:layout_marginLeft="75dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="76dp"
+            android:layout_marginRight="76dp"
+            android:layout_marginBottom="8dp"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            app:layout_constraintBottom_toTopOf="@+id/aPassword"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/aut" />
 
-    <Button
-        android:id="@+id/toAut"
-        style="@style/Widget.AppCompat.Button.Colored"
-        android:layout_width="119dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="146dp"
-        android:layout_marginRight="146dp"
-        android:text="Authorize"
-        android:textColor="#39B51A"
-        app:backgroundTint="#ECE4E4"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/aPassword" />
+        <EditText
+            android:id="@+id/aPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="75dp"
+            android:layout_marginLeft="75dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="76dp"
+            android:layout_marginRight="76dp"
+            android:layout_marginBottom="24dp"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword"
+            app:layout_constraintBottom_toTopOf="@+id/toAut"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/aEmail" />
 
-    <Button
-        android:id="@+id/reg"
-        style="@style/Widget.AppCompat.Button.Borderless"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="56dp"
-        android:layout_marginEnd="96dp"
-        android:layout_marginRight="96dp"
-        android:text="to sign up a new account"
-        android:textColor="#F11212"
-        app:backgroundTint="#5C1616"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toAut" />
+        <Button
+            android:id="@+id/toAut"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="150dp"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="150dp"
+            android:layout_marginRight="150dp"
+            android:text="Authorize"
+            android:textColor="#39B51A"
+            app:backgroundTint="#E0E0E0"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/aPassword"
+            app:strokeColor="#39B51A" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <Button
+            android:id="@+id/reg"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginRight="0dp"
+            android:text="to sign up a new account"
+            android:textColor="#F11212"
+            app:backgroundTint="#5C1616"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toAut" />
+
+    </LinearLayout>
+
+</LinearLayout>

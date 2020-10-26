@@ -1,22 +1,22 @@
 [
   {
-    "bcoordinates": "55.752994, 48.744084",
-    "bstreet": "universitetskaya 1",
+    "bcoordinates": "55.752994,48.744084",
+    "bstreet": "Universitetskaya 1",
     "name": "campus"
   },
   {
-    "bcoordinates": "55.751387, 48.742658",
-    "bstreet": "sportivnaya 107",
+    "bcoordinates": "55.751387,48.742658",
+    "bstreet": "Sportivnaya 107",
     "name": "gym"
   },
   {
-    "bcoordinates": "55.749040, 48.743755",
-    "bstreet": "sportivnaya 126",
+    "bcoordinates": "55.749040,48.743755",
+    "bstreet": "Sportivnaya 126",
     "name": "multi-storey building 126"
   },
   {
-    "bcoordinates": "55.747844, 48.742623",
-    "bstreet": "sportivnaya 110",
+    "bcoordinates": "55.747844,48.742623",
+    "bstreet": "Sportivnaya 110",
     "name": "multi-storey building 110"
   }
 ]

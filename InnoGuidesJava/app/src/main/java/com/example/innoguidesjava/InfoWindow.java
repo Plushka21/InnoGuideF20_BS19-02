@@ -12,13 +12,16 @@ import android.os.Bundle;
 
 public class InfoWindow extends DialogFragment {
 
-    private final String name;
+    private final String name, number, address;
     private final double rating;
 
-    public InfoWindow(String name, double rating){
-        this.name=name;
-        this.rating=rating;
+    public InfoWindow(String name, String number, String address, double rating){
+        this.name = name;
+        this.number = number;
+        this.address = address;
+        this.rating = rating;
     }
+
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @NonNull
     public Dialog onCreateDialog(Bundle savedInstanceState) {
@@ -27,7 +30,10 @@ public class InfoWindow extends DialogFragment {
                 .setTitle("Place Info")
                 .setView(R.layout.activity_info_window)
                 .setPositiveButton("OK", null)
-                .setMessage("Name: " + this.name+"\nRating: "+this.rating)
+                .setMessage("Name: " + this.name +
+                        "\nRating: " + this.rating +
+                        "\nAddress: " + this.address +
+                        "\nPhone: " + this.number)
                 .create();
     }
 }
