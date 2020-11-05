@@ -24,6 +24,10 @@
         "source": "C:\\Users\\bugue\\AndroidStudioProjects\\InnoGuidesJava\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_launcher_background.png"
     },
     {
+        "merged": "C:\\Users\\bugue\\AndroidStudioProjects\\InnoGuidesJava\\app\\build\\intermediates\\res\\merged\\debug\\raw_innoguide_public_photo.json.flat",
+        "source": "C:\\Users\\bugue\\AndroidStudioProjects\\InnoGuidesJava\\app\\src\\main\\res\\raw\\innoguide_public_photo.json"
+    },
+    {
         "merged": "C:\\Users\\bugue\\AndroidStudioProjects\\InnoGuidesJava\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_home_black_24dp.png.flat",
         "source": "C:\\Users\\bugue\\AndroidStudioProjects\\InnoGuidesJava\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_home_black_24dp.png"
     },
@@ -58,6 +62,10 @@
     {
         "merged": "C:\\Users\\bugue\\AndroidStudioProjects\\InnoGuidesJava\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
         "source": "C:\\Users\\bugue\\AndroidStudioProjects\\InnoGuidesJava\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\bugue\\AndroidStudioProjects\\InnoGuidesJava\\app\\build\\intermediates\\res\\merged\\debug\\raw_innoguide_public_feedback.json.flat",
+        "source": "C:\\Users\\bugue\\AndroidStudioProjects\\InnoGuidesJava\\app\\src\\main\\res\\raw\\innoguide_public_feedback.json"
     },
     {
         "merged": "C:\\Users\\bugue\\AndroidStudioProjects\\InnoGuidesJava\\app\\build\\intermediates\\res\\merged\\debug\\raw_innoguide_public_place_working_time.json.flat",
@@ -142,6 +150,14 @@
     {
         "merged": "C:\\Users\\bugue\\AndroidStudioProjects\\InnoGuidesJava\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_dashboard_black_24dp.png.flat",
         "source": "C:\\Users\\bugue\\AndroidStudioProjects\\InnoGuidesJava\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_dashboard_black_24dp.png"
+    },
+    {
+        "merged": "C:\\Users\\bugue\\AndroidStudioProjects\\InnoGuidesJava\\app\\build\\intermediates\\res\\merged\\debug\\layout_rabotaet.xml.flat",
+        "source": "C:\\Users\\bugue\\AndroidStudioProjects\\InnoGuidesJava\\app\\src\\main\\res\\layout\\rabotaet.xml"
+    },
+    {
+        "merged": "C:\\Users\\bugue\\AndroidStudioProjects\\InnoGuidesJava\\app\\build\\intermediates\\res\\merged\\debug\\layout_ne_rabotaet.xml.flat",
+        "source": "C:\\Users\\bugue\\AndroidStudioProjects\\InnoGuidesJava\\app\\src\\main\\res\\layout\\ne_rabotaet.xml"
     },
     {
         "merged": "C:\\Users\\bugue\\AndroidStudioProjects\\InnoGuidesJava\\app\\build\\intermediates\\res\\merged\\debug\\raw_innoguide_public_place.json.flat",

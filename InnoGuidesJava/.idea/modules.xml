@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/InnoGuidesJava.iml" filepath="$PROJECT_DIR$/.idea/modules/InnoGuidesJava.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/InnoGuidesJava.iml" filepath="$PROJECT_DIR$/.idea/InnoGuidesJava.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/InnoGuidesJava.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/InnoGuidesJava.app.iml" />
     </modules>
   </component>
