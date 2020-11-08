@@ -15,7 +15,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.InnoGuidesJava">
-        <activity android:name=".InfoWindow"></activity>
+        <activity
+            android:name=".ScrollingActivity"
+            android:label="@string/title_activity_scrolling"
+            android:theme="@style/Theme.InnoGuidesJava.NoActionBar">
+            <intent-filter>
+                <action android:name="com.example.innoguidesjava.ScrollingActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -32,10 +41,10 @@
             android:name=".MapsActivity"
             android:label="@string/title_activity_maps" />
         <activity
-            android:name=".MyLocation"
+            android:name=".Map"
             android:label="@string/title_activity_my_location" />
         <activity
-            android:name=".registration"
+            android:name=".Registration"
             android:parentActivityName=".MainActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>

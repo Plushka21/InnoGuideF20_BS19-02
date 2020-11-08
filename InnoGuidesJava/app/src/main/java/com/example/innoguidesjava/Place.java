@@ -3,7 +3,8 @@ package com.example.innoguidesjava;
 public class Place {
 
     private String name, number, address, time[], days[];
-    private double rating, c1, c2; // c1,c2 - coordinates
+    private double rating;
+    private final double c1, c2; // c1,c2 - coordinates
 
     public Place(String name, String number, String address, double c1, double c2, String time[], String days[]){
         this.name = name;
@@ -35,16 +36,8 @@ public class Place {
         return c1;
     }
 
-    public void setC1(double c1) {
-        this.c1 = c1;
-    }
-
     public double getC2() {
         return c2;
-    }
-
-    public void setC2(double c2) {
-        this.c2 = c2;
     }
 
     public String getNumber() {

@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\bugue\AndroidStudioProjects\InnoGuidesJava\app\src\main\AndroidManifest.xml:2:1-49:12
-INJECTED from C:\Users\bugue\AndroidStudioProjects\InnoGuidesJava\app\src\main\AndroidManifest.xml:2:1-49:12
-INJECTED from C:\Users\bugue\AndroidStudioProjects\InnoGuidesJava\app\src\main\AndroidManifest.xml:2:1-49:12
-INJECTED from C:\Users\bugue\AndroidStudioProjects\InnoGuidesJava\app\src\main\AndroidManifest.xml:2:1-49:12
+ADDED from C:\Users\bugue\AndroidStudioProjects\InnoGuidesJava\app\src\main\AndroidManifest.xml:2:1-58:12
+INJECTED from C:\Users\bugue\AndroidStudioProjects\InnoGuidesJava\app\src\main\AndroidManifest.xml:2:1-58:12
+INJECTED from C:\Users\bugue\AndroidStudioProjects\InnoGuidesJava\app\src\main\AndroidManifest.xml:2:1-58:12
+INJECTED from C:\Users\bugue\AndroidStudioProjects\InnoGuidesJava\app\src\main\AndroidManifest.xml:2:1-58:12
 MERGED from [androidx.navigation:navigation-ui:2.2.2] C:\Users\bugue\.gradle\caches\transforms-2\files-2.1\0615dd36bdcb2f6590bb0ac26e224203\navigation-ui-2.2.2\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.material:material:1.2.1] C:\Users\bugue\.gradle\caches\transforms-2\files-2.1\b988cdf40af7cdf3e0317011f8e5bfe7\material-1.2.1\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.2] C:\Users\bugue\.gradle\caches\transforms-2\files-2.1\ef65eb46079c4e4e8fdff66f1cfdf6a0\constraintlayout-2.0.2\AndroidManifest.xml:2:1-11:12
@@ -44,20 +44,20 @@ MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\bugue\.gradle\cache
 MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] C:\Users\bugue\.gradle\caches\transforms-2\files-2.1\221802478e72bb4be4f908a2b8523bb4\lifecycle-runtime-2.2.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\bugue\.gradle\caches\transforms-2\files-2.1\884715ee5d4759e99f0bf4b3058e7279\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\bugue\.gradle\caches\transforms-2\files-2.1\01339aeadc2379d14234ec1725fb1d1d\jetified-annotation-experimental-1.0.0\AndroidManifest.xml:17:1-24:12
-INJECTED from C:\Users\bugue\AndroidStudioProjects\InnoGuidesJava\app\src\main\AndroidManifest.xml:2:1-49:12
-INJECTED from C:\Users\bugue\AndroidStudioProjects\InnoGuidesJava\app\src\main\AndroidManifest.xml:2:1-49:12
-INJECTED from C:\Users\bugue\AndroidStudioProjects\InnoGuidesJava\app\src\main\AndroidManifest.xml:2:1-49:12
+INJECTED from C:\Users\bugue\AndroidStudioProjects\InnoGuidesJava\app\src\main\AndroidManifest.xml:2:1-58:12
+INJECTED from C:\Users\bugue\AndroidStudioProjects\InnoGuidesJava\app\src\main\AndroidManifest.xml:2:1-58:12
+INJECTED from C:\Users\bugue\AndroidStudioProjects\InnoGuidesJava\app\src\main\AndroidManifest.xml:2:1-58:12
 	package
 		ADDED from C:\Users\bugue\AndroidStudioProjects\InnoGuidesJava\app\src\main\AndroidManifest.xml:3:5-41
 		INJECTED from C:\Users\bugue\AndroidStudioProjects\InnoGuidesJava\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\bugue\AndroidStudioProjects\InnoGuidesJava\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\bugue\AndroidStudioProjects\InnoGuidesJava\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\bugue\AndroidStudioProjects\InnoGuidesJava\app\src\main\AndroidManifest.xml:2:1-49:12
+		ADDED from C:\Users\bugue\AndroidStudioProjects\InnoGuidesJava\app\src\main\AndroidManifest.xml:2:1-58:12
 		INJECTED from C:\Users\bugue\AndroidStudioProjects\InnoGuidesJava\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from C:\Users\bugue\AndroidStudioProjects\InnoGuidesJava\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\bugue\AndroidStudioProjects\InnoGuidesJava\app\src\main\AndroidManifest.xml:2:1-49:12
+		ADDED from C:\Users\bugue\AndroidStudioProjects\InnoGuidesJava\app\src\main\AndroidManifest.xml:2:1-58:12
 		INJECTED from C:\Users\bugue\AndroidStudioProjects\InnoGuidesJava\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\bugue\AndroidStudioProjects\InnoGuidesJava\app\src\main\AndroidManifest.xml:2:11-69
@@ -66,7 +66,7 @@ ADDED from C:\Users\bugue\AndroidStudioProjects\InnoGuidesJava\app\src\main\Andr
 	android:name
 		ADDED from C:\Users\bugue\AndroidStudioProjects\InnoGuidesJava\app\src\main\AndroidManifest.xml:9:22-76
 application
-ADDED from C:\Users\bugue\AndroidStudioProjects\InnoGuidesJava\app\src\main\AndroidManifest.xml:11:5-47:19
+ADDED from C:\Users\bugue\AndroidStudioProjects\InnoGuidesJava\app\src\main\AndroidManifest.xml:11:5-56:19
 MERGED from [com.google.android.material:material:1.2.1] C:\Users\bugue\.gradle\caches\transforms-2\files-2.1\b988cdf40af7cdf3e0317011f8e5bfe7\material-1.2.1\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.2.1] C:\Users\bugue\.gradle\caches\transforms-2\files-2.1\b988cdf40af7cdf3e0317011f8e5bfe7\material-1.2.1\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.2] C:\Users\bugue\.gradle\caches\transforms-2\files-2.1\ef65eb46079c4e4e8fdff66f1cfdf6a0\constraintlayout-2.0.2\AndroidManifest.xml:9:5-20
@@ -97,48 +97,62 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\bu
 		ADDED from C:\Users\bugue\AndroidStudioProjects\InnoGuidesJava\app\src\main\AndroidManifest.xml:12:9-35
 	android:theme
 		ADDED from C:\Users\bugue\AndroidStudioProjects\InnoGuidesJava\app\src\main\AndroidManifest.xml:17:9-52
-activity#com.example.innoguidesjava.InfoWindow
-ADDED from C:\Users\bugue\AndroidStudioProjects\InnoGuidesJava\app\src\main\AndroidManifest.xml:18:9-57
+activity#com.example.innoguidesjava.ScrollingActivity
+ADDED from C:\Users\bugue\AndroidStudioProjects\InnoGuidesJava\app\src\main\AndroidManifest.xml:18:9-27:20
+	android:label
+		ADDED from C:\Users\bugue\AndroidStudioProjects\InnoGuidesJava\app\src\main\AndroidManifest.xml:20:13-61
+	android:theme
+		ADDED from C:\Users\bugue\AndroidStudioProjects\InnoGuidesJava\app\src\main\AndroidManifest.xml:21:13-68
 	android:name
-		ADDED from C:\Users\bugue\AndroidStudioProjects\InnoGuidesJava\app\src\main\AndroidManifest.xml:18:19-45
+		ADDED from C:\Users\bugue\AndroidStudioProjects\InnoGuidesJava\app\src\main\AndroidManifest.xml:19:13-46
+intent-filter#action:name:com.example.innoguidesjava.ScrollingActivity+category:name:android.intent.category.DEFAULT
+ADDED from C:\Users\bugue\AndroidStudioProjects\InnoGuidesJava\app\src\main\AndroidManifest.xml:22:13-26:29
+action#com.example.innoguidesjava.ScrollingActivity
+ADDED from C:\Users\bugue\AndroidStudioProjects\InnoGuidesJava\app\src\main\AndroidManifest.xml:23:17-87
+	android:name
+		ADDED from C:\Users\bugue\AndroidStudioProjects\InnoGuidesJava\app\src\main\AndroidManifest.xml:23:25-84
+category#android.intent.category.DEFAULT
+ADDED from C:\Users\bugue\AndroidStudioProjects\InnoGuidesJava\app\src\main\AndroidManifest.xml:25:17-76
+	android:name
+		ADDED from C:\Users\bugue\AndroidStudioProjects\InnoGuidesJava\app\src\main\AndroidManifest.xml:25:27-73
 meta-data#com.google.android.geo.API_KEY
-ADDED from C:\Users\bugue\AndroidStudioProjects\InnoGuidesJava\app\src\main\AndroidManifest.xml:27:9-29:55
+ADDED from C:\Users\bugue\AndroidStudioProjects\InnoGuidesJava\app\src\main\AndroidManifest.xml:36:9-38:55
 	android:value
-		ADDED from C:\Users\bugue\AndroidStudioProjects\InnoGuidesJava\app\src\main\AndroidManifest.xml:29:13-52
+		ADDED from C:\Users\bugue\AndroidStudioProjects\InnoGuidesJava\app\src\main\AndroidManifest.xml:38:13-52
 	android:name
-		ADDED from C:\Users\bugue\AndroidStudioProjects\InnoGuidesJava\app\src\main\AndroidManifest.xml:28:13-58
+		ADDED from C:\Users\bugue\AndroidStudioProjects\InnoGuidesJava\app\src\main\AndroidManifest.xml:37:13-58
 activity#com.example.innoguidesjava.MapsActivity
-ADDED from C:\Users\bugue\AndroidStudioProjects\InnoGuidesJava\app\src\main\AndroidManifest.xml:31:9-33:59
+ADDED from C:\Users\bugue\AndroidStudioProjects\InnoGuidesJava\app\src\main\AndroidManifest.xml:40:9-42:59
 	android:label
-		ADDED from C:\Users\bugue\AndroidStudioProjects\InnoGuidesJava\app\src\main\AndroidManifest.xml:33:13-56
+		ADDED from C:\Users\bugue\AndroidStudioProjects\InnoGuidesJava\app\src\main\AndroidManifest.xml:42:13-56
 	android:name
-		ADDED from C:\Users\bugue\AndroidStudioProjects\InnoGuidesJava\app\src\main\AndroidManifest.xml:32:13-41
+		ADDED from C:\Users\bugue\AndroidStudioProjects\InnoGuidesJava\app\src\main\AndroidManifest.xml:41:13-41
 activity#com.example.innoguidesjava.MyLocation
-ADDED from C:\Users\bugue\AndroidStudioProjects\InnoGuidesJava\app\src\main\AndroidManifest.xml:34:9-36:66
+ADDED from C:\Users\bugue\AndroidStudioProjects\InnoGuidesJava\app\src\main\AndroidManifest.xml:43:9-45:66
 	android:label
-		ADDED from C:\Users\bugue\AndroidStudioProjects\InnoGuidesJava\app\src\main\AndroidManifest.xml:36:13-63
+		ADDED from C:\Users\bugue\AndroidStudioProjects\InnoGuidesJava\app\src\main\AndroidManifest.xml:45:13-63
 	android:name
-		ADDED from C:\Users\bugue\AndroidStudioProjects\InnoGuidesJava\app\src\main\AndroidManifest.xml:35:13-39
-activity#com.example.innoguidesjava.registration
-ADDED from C:\Users\bugue\AndroidStudioProjects\InnoGuidesJava\app\src\main\AndroidManifest.xml:37:9-39:58
+		ADDED from C:\Users\bugue\AndroidStudioProjects\InnoGuidesJava\app\src\main\AndroidManifest.xml:44:13-39
+activity#com.example.innoguidesjava.Registration
+ADDED from C:\Users\bugue\AndroidStudioProjects\InnoGuidesJava\app\src\main\AndroidManifest.xml:46:9-48:58
 	android:parentActivityName
-		ADDED from C:\Users\bugue\AndroidStudioProjects\InnoGuidesJava\app\src\main\AndroidManifest.xml:39:13-55
+		ADDED from C:\Users\bugue\AndroidStudioProjects\InnoGuidesJava\app\src\main\AndroidManifest.xml:48:13-55
 	android:name
-		ADDED from C:\Users\bugue\AndroidStudioProjects\InnoGuidesJava\app\src\main\AndroidManifest.xml:38:13-41
+		ADDED from C:\Users\bugue\AndroidStudioProjects\InnoGuidesJava\app\src\main\AndroidManifest.xml:47:13-41
 activity#com.example.innoguidesjava.MainActivity
-ADDED from C:\Users\bugue\AndroidStudioProjects\InnoGuidesJava\app\src\main\AndroidManifest.xml:40:9-46:20
+ADDED from C:\Users\bugue\AndroidStudioProjects\InnoGuidesJava\app\src\main\AndroidManifest.xml:49:9-55:20
 	android:name
-		ADDED from C:\Users\bugue\AndroidStudioProjects\InnoGuidesJava\app\src\main\AndroidManifest.xml:40:19-47
+		ADDED from C:\Users\bugue\AndroidStudioProjects\InnoGuidesJava\app\src\main\AndroidManifest.xml:49:19-47
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\bugue\AndroidStudioProjects\InnoGuidesJava\app\src\main\AndroidManifest.xml:41:13-45:29
+ADDED from C:\Users\bugue\AndroidStudioProjects\InnoGuidesJava\app\src\main\AndroidManifest.xml:50:13-54:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\bugue\AndroidStudioProjects\InnoGuidesJava\app\src\main\AndroidManifest.xml:42:17-69
+ADDED from C:\Users\bugue\AndroidStudioProjects\InnoGuidesJava\app\src\main\AndroidManifest.xml:51:17-69
 	android:name
-		ADDED from C:\Users\bugue\AndroidStudioProjects\InnoGuidesJava\app\src\main\AndroidManifest.xml:42:25-66
+		ADDED from C:\Users\bugue\AndroidStudioProjects\InnoGuidesJava\app\src\main\AndroidManifest.xml:51:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\bugue\AndroidStudioProjects\InnoGuidesJava\app\src\main\AndroidManifest.xml:44:17-77
+ADDED from C:\Users\bugue\AndroidStudioProjects\InnoGuidesJava\app\src\main\AndroidManifest.xml:53:17-77
 	android:name
-		ADDED from C:\Users\bugue\AndroidStudioProjects\InnoGuidesJava\app\src\main\AndroidManifest.xml:44:27-74
+		ADDED from C:\Users\bugue\AndroidStudioProjects\InnoGuidesJava\app\src\main\AndroidManifest.xml:53:27-74
 uses-sdk
 INJECTED from C:\Users\bugue\AndroidStudioProjects\InnoGuidesJava\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\bugue\AndroidStudioProjects\InnoGuidesJava\app\src\main\AndroidManifest.xml

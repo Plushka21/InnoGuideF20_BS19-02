@@ -32,7 +32,16 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/Theme.InnoGuidesJava" >
-        <activity android:name="com.example.innoguidesjava.InfoWindow" />
+        <activity
+            android:name="com.example.innoguidesjava.ScrollingActivity"
+            android:label="@string/title_activity_scrolling"
+            android:theme="@style/Theme.InnoGuidesJava.NoActionBar" >
+            <intent-filter>
+                <action android:name="com.example.innoguidesjava.ScrollingActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -52,7 +61,7 @@
             android:name="com.example.innoguidesjava.MyLocation"
             android:label="@string/title_activity_my_location" />
         <activity
-            android:name="com.example.innoguidesjava.registration"
+            android:name="com.example.innoguidesjava.Registration"
             android:parentActivityName="com.example.innoguidesjava.MainActivity" />
         <activity android:name="com.example.innoguidesjava.MainActivity" >
             <intent-filter>

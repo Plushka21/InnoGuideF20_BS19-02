@@ -1247,6 +1247,7 @@ dimen abc_text_size_title_material_toolbar
 dimen action_bar_size
 dimen activity_horizontal_margin
 dimen activity_vertical_margin
+dimen app_bar_height
 dimen appcompat_dialog_background_inset
 dimen cardview_compat_inset_shadow
 dimen cardview_default_elevation
@@ -1307,6 +1308,7 @@ dimen design_tab_text_size_2line
 dimen design_textinput_caption_translate_y
 dimen disabled_alpha_material_dark
 dimen disabled_alpha_material_light
+dimen fab_margin
 dimen fastscroll_default_thickness
 dimen fastscroll_margin
 dimen fastscroll_minimum_range
@@ -1504,6 +1506,7 @@ dimen notification_subtext_size
 dimen notification_top_pad
 dimen notification_top_pad_large_text
 dimen test_mtrl_calendar_day_cornerSize
+dimen text_margin
 dimen tooltip_corner_radius
 dimen tooltip_horizontal_padding
 dimen tooltip_margin
@@ -1742,6 +1745,7 @@ id action_menu_presenter
 id action_mode_bar
 id action_mode_bar_stub
 id action_mode_close_button
+id action_settings
 id action_text
 id actions
 id activity_chooser_view_content
@@ -1754,6 +1758,7 @@ id all
 id always
 id animateToEnd
 id animateToStart
+id app_bar
 id asConfigured
 id async
 id aut
@@ -1834,6 +1839,7 @@ id enterAlwaysCollapsed
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
+id fab
 id fade
 id fill
 id fill_horizontal
@@ -2051,6 +2057,8 @@ id title_template
 id toAut
 id toReg
 id toggle
+id toolbar
+id toolbar_layout
 id top
 id topPanel
 id touch_outside
@@ -2138,10 +2146,10 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
-layout activity_info_window
 layout activity_main
-layout activity_maps
 layout activity_my_location
+layout activity_scrolling
+layout content_scrolling
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -2214,6 +2222,7 @@ layout text_view_with_line_height_from_style
 layout text_view_with_theme_line_height
 layout text_view_without_line_height
 menu bottom_nav_menu
+menu menu_scrolling
 mipmap ic_launcher
 mipmap ic_launcher_round
 navigation mobile_navigation
@@ -2256,6 +2265,7 @@ string abc_searchview_description_voice
 string abc_shareactionprovider_share_with
 string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
+string action_settings
 string app_name
 string appbar_scrolling_view_behavior
 string bottom_sheet_behavior
@@ -2290,6 +2300,7 @@ string google_maps_key
 string hide_bottom_view_on_scroll_behavior
 string icon_content_description
 string item_view_role_description
+string large_text
 string location_permission_denied
 string material_slider_range_end
 string material_slider_range_start
@@ -2342,6 +2353,7 @@ string status_bar_notification_info_overflow
 string title_activity_info_window
 string title_activity_maps
 string title_activity_my_location
+string title_activity_scrolling
 string title_dashboard
 string title_home
 string title_notifications
@@ -2758,6 +2770,9 @@ style Theme_Design_Light_BottomSheetDialog
 style Theme_Design_Light_NoActionBar
 style Theme_Design_NoActionBar
 style Theme_InnoGuidesJava
+style Theme_InnoGuidesJava_AppBarOverlay
+style Theme_InnoGuidesJava_NoActionBar
+style Theme_InnoGuidesJava_PopupOverlay
 style Theme_MaterialComponents
 style Theme_MaterialComponents_BottomSheetDialog
 style Theme_MaterialComponents_Bridge

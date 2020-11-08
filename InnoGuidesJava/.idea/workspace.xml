@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="NONE" />
   </component>
@@ -24,7 +29,16 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="android.recentlyUsedThemes" value="Theme.InnoGuidesJava" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="android.template.-1743333331">
+      <recent name="com.example.innoguidesjava" />
+    </key>
+    <key name="android.template.-1310194337">
+      <recent name="com.example.innoguidesjava" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
@@ -106,60 +120,69 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="446" y="97" key="#com.intellij.ide.util.MemberChooser" timestamp="1604595094612">
+    <state x="233" y="0" width="814" height="760" key="#Intentions" timestamp="1604600795035">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
-    <state x="446" y="97" key="#com.intellij.ide.util.MemberChooser/0.0.1280.760@0.0.1280.760" timestamp="1604595094612" />
+    <state x="233" y="0" width="814" height="760" key="#Intentions/0.0.1280.760@0.0.1280.760" timestamp="1604600795035" />
+    <state x="446" y="97" key="#com.intellij.ide.util.MemberChooser" timestamp="1604742028673">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state x="446" y="97" key="#com.intellij.ide.util.MemberChooser/0.0.1280.760@0.0.1280.760" timestamp="1604742028673" />
+    <state x="371" y="128" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1604753296164">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state x="371" y="128" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.760@0.0.1280.760" timestamp="1604753296164" />
+    <state x="437" y="127" key="AndroidProcessChooserDialog" timestamp="1604599332847">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state x="437" y="127" key="AndroidProcessChooserDialog/0.0.1280.760@0.0.1280.760" timestamp="1604599332847" />
+    <state x="221" y="86" key="AndroidThemeDialog" timestamp="1604810754421">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state x="221" y="86" key="AndroidThemeDialog/0.0.1280.760@0.0.1280.760" timestamp="1604810754421" />
     <state x="421" y="136" key="FileChooserDialogImpl" timestamp="1604592787805">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
     <state x="421" y="136" key="FileChooserDialogImpl/0.0.1280.760@0.0.1280.760" timestamp="1604592787805" />
-    <state width="1235" height="248" key="GridCell.Tab.0.bottom" timestamp="1604594903627">
+    <state width="1235" height="38" key="GridCell.Tab.0.bottom" timestamp="1604600798772">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
-    <state width="1235" height="248" key="GridCell.Tab.0.bottom/0.0.1280.760@0.0.1280.760" timestamp="1604594903627" />
-    <state width="1235" height="248" key="GridCell.Tab.0.center" timestamp="1604594903627">
+    <state width="1235" height="38" key="GridCell.Tab.0.bottom/0.0.1280.760@0.0.1280.760" timestamp="1604600798772" />
+    <state width="1235" height="38" key="GridCell.Tab.0.center" timestamp="1604600798772">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
-    <state width="1235" height="248" key="GridCell.Tab.0.center/0.0.1280.760@0.0.1280.760" timestamp="1604594903627" />
-    <state width="1235" height="248" key="GridCell.Tab.0.left" timestamp="1604594903626">
+    <state width="1235" height="38" key="GridCell.Tab.0.center/0.0.1280.760@0.0.1280.760" timestamp="1604600798772" />
+    <state width="1235" height="38" key="GridCell.Tab.0.left" timestamp="1604600798772">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
-    <state width="1235" height="248" key="GridCell.Tab.0.left/0.0.1280.760@0.0.1280.760" timestamp="1604594903626" />
-    <state width="1235" height="248" key="GridCell.Tab.0.right" timestamp="1604594903627">
+    <state width="1235" height="38" key="GridCell.Tab.0.left/0.0.1280.760@0.0.1280.760" timestamp="1604600798772" />
+    <state width="1235" height="38" key="GridCell.Tab.0.right" timestamp="1604600798772">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
-    <state width="1235" height="248" key="GridCell.Tab.0.right/0.0.1280.760@0.0.1280.760" timestamp="1604594903627" />
-    <state width="1235" height="248" key="GridCell.Tab.1.bottom" timestamp="1604594903628">
+    <state width="1235" height="38" key="GridCell.Tab.0.right/0.0.1280.760@0.0.1280.760" timestamp="1604600798772" />
+    <state width="1235" height="38" key="GridCell.Tab.1.bottom" timestamp="1604600798772">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
-    <state width="1235" height="248" key="GridCell.Tab.1.bottom/0.0.1280.760@0.0.1280.760" timestamp="1604594903628" />
-    <state width="1235" height="248" key="GridCell.Tab.1.center" timestamp="1604594903627">
+    <state width="1235" height="38" key="GridCell.Tab.1.bottom/0.0.1280.760@0.0.1280.760" timestamp="1604600798772" />
+    <state width="1235" height="38" key="GridCell.Tab.1.center" timestamp="1604600798772">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
-    <state width="1235" height="248" key="GridCell.Tab.1.center/0.0.1280.760@0.0.1280.760" timestamp="1604594903627" />
-    <state width="1235" height="248" key="GridCell.Tab.1.left" timestamp="1604594903627">
+    <state width="1235" height="38" key="GridCell.Tab.1.center/0.0.1280.760@0.0.1280.760" timestamp="1604600798772" />
+    <state width="1235" height="38" key="GridCell.Tab.1.left" timestamp="1604600798772">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
-    <state width="1235" height="248" key="GridCell.Tab.1.left/0.0.1280.760@0.0.1280.760" timestamp="1604594903627" />
-    <state width="1235" height="248" key="GridCell.Tab.1.right" timestamp="1604594903627">
+    <state width="1235" height="38" key="GridCell.Tab.1.left/0.0.1280.760@0.0.1280.760" timestamp="1604600798772" />
+    <state width="1235" height="38" key="GridCell.Tab.1.right" timestamp="1604600798772">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
-    <state width="1235" height="248" key="GridCell.Tab.1.right/0.0.1280.760@0.0.1280.760" timestamp="1604594903627" />
+    <state width="1235" height="38" key="GridCell.Tab.1.right/0.0.1280.760@0.0.1280.760" timestamp="1604600798772" />
     <state x="434" y="128" key="refactoring.ChangeSignatureDialog" timestamp="1604595096846">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
     <state x="434" y="128" key="refactoring.ChangeSignatureDialog/0.0.1280.760@0.0.1280.760" timestamp="1604595096846" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/innoguidesjava/JSONHelper.java</url>
-          <line>70</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <state x="300" y="78" width="672" height="678" key="search.everywhere.popup" timestamp="1604810802775">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state x="300" y="78" width="672" height="678" key="search.everywhere.popup/0.0.1280.760@0.0.1280.760" timestamp="1604810802775" />
   </component>
 </project>

@@ -32,8 +32,8 @@
         "source": "C:\\Users\\bugue\\AndroidStudioProjects\\InnoGuidesJava\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_home_black_24dp.png"
     },
     {
-        "merged": "C:\\Users\\bugue\\AndroidStudioProjects\\InnoGuidesJava\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_info_window.xml.flat",
-        "source": "C:\\Users\\bugue\\AndroidStudioProjects\\InnoGuidesJava\\app\\src\\main\\res\\layout\\activity_info_window.xml"
+        "merged": "C:\\Users\\bugue\\AndroidStudioProjects\\InnoGuidesJava\\app\\build\\intermediates\\res\\merged\\debug\\layout_content_scrolling.xml.flat",
+        "source": "C:\\Users\\bugue\\AndroidStudioProjects\\InnoGuidesJava\\app\\src\\main\\res\\layout\\content_scrolling.xml"
     },
     {
         "merged": "C:\\Users\\bugue\\AndroidStudioProjects\\InnoGuidesJava\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_home_black_24dp.png.flat",
@@ -46,10 +46,6 @@
     {
         "merged": "C:\\Users\\bugue\\AndroidStudioProjects\\InnoGuidesJava\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_notifications_black_24dp.png.flat",
         "source": "C:\\Users\\bugue\\AndroidStudioProjects\\InnoGuidesJava\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_notifications_black_24dp.png"
-    },
-    {
-        "merged": "C:\\Users\\bugue\\AndroidStudioProjects\\InnoGuidesJava\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_maps.xml.flat",
-        "source": "C:\\Users\\bugue\\AndroidStudioProjects\\InnoGuidesJava\\app\\src\\main\\res\\layout\\activity_maps.xml"
     },
     {
         "merged": "C:\\Users\\bugue\\AndroidStudioProjects\\InnoGuidesJava\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_home_black_24dp.png.flat",
@@ -78,6 +74,10 @@
     {
         "merged": "C:\\Users\\bugue\\AndroidStudioProjects\\InnoGuidesJava\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_home_black_24dp.xml.flat",
         "source": "C:\\Users\\bugue\\AndroidStudioProjects\\InnoGuidesJava\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_home_black_24dp.xml"
+    },
+    {
+        "merged": "C:\\Users\\bugue\\AndroidStudioProjects\\InnoGuidesJava\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_scrolling.xml.flat",
+        "source": "C:\\Users\\bugue\\AndroidStudioProjects\\InnoGuidesJava\\app\\src\\main\\res\\layout\\activity_scrolling.xml"
     },
     {
         "merged": "C:\\Users\\bugue\\AndroidStudioProjects\\InnoGuidesJava\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_launcher_background.png.flat",
@@ -182,6 +182,10 @@
     {
         "merged": "C:\\Users\\bugue\\AndroidStudioProjects\\InnoGuidesJava\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_notifications_black_24dp.png.flat",
         "source": "C:\\Users\\bugue\\AndroidStudioProjects\\InnoGuidesJava\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_notifications_black_24dp.png"
+    },
+    {
+        "merged": "C:\\Users\\bugue\\AndroidStudioProjects\\InnoGuidesJava\\app\\build\\intermediates\\res\\merged\\debug\\menu_menu_scrolling.xml.flat",
+        "source": "C:\\Users\\bugue\\AndroidStudioProjects\\InnoGuidesJava\\app\\src\\main\\res\\menu\\menu_scrolling.xml"
     },
     {
         "merged": "C:\\Users\\bugue\\AndroidStudioProjects\\InnoGuidesJava\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",

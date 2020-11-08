@@ -1,6 +1,5 @@
 package com.example.innoguidesjava;
 
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -8,19 +7,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
-import com.example.innoguidesjava.R;
-
-import com.google.android.gms.maps.GoogleMap;
-import com.google.android.gms.maps.model.Marker;
-import com.google.gson.Gson;
-
-import org.json.JSONException;
-import org.json.JSONObject;
-import org.json.JSONStringer;
-
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -41,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
         reg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(MainActivity.this, registration.class);
+                Intent intent = new Intent(MainActivity.this, Registration.class);
                 startActivity(intent);
             }
         });
@@ -53,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
                 String Email = email.getText().toString();
                 boolean checker = db.authorization(Email, Password);
                 if (checker) {
-                    Intent loc = new Intent(MainActivity.this, MyLocation.class);
+                    Intent loc = new Intent(MainActivity.this, Map.class);
                     startActivity(loc);
                 }
                 else Toast.makeText(getApplicationContext(),"Wrong email or password",Toast.LENGTH_SHORT).show();
