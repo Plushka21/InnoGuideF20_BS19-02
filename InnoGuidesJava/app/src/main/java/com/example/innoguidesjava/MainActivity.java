@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
         reg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, Registration.class);
+                Intent intent=new Intent(MainActivity.this, registration.class);
                 startActivity(intent);
             }
         });
@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
                 String Email = email.getText().toString();
                 boolean checker = db.authorization(Email, Password);
                 if (checker) {
-                    Intent loc = new Intent(MainActivity.this, Map.class);
+                    Intent loc = new Intent(MainActivity.this, MyMap.class);
                     startActivity(loc);
                 }
                 else Toast.makeText(getApplicationContext(),"Wrong email or password",Toast.LENGTH_SHORT).show();

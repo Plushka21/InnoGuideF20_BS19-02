@@ -9,7 +9,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-public class Registration extends AppCompatActivity {
+public class registration extends AppCompatActivity {
     private EditText password,email,cPassword;
     private Button toReg;
     DBhelper db;
@@ -17,11 +17,11 @@ public class Registration extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.registration_page);
-        db = new DBhelper(this);
-        password = findViewById(R.id.rPassword);
-        cPassword = findViewById(R.id.cPassword);
-        email = findViewById(R.id.rEmail);
-        toReg = findViewById(R.id.toReg);
+        db=new DBhelper(this);
+        password=findViewById(R.id.rPassword);
+        cPassword=findViewById(R.id.cPassword);
+        email=findViewById(R.id.rEmail);
+        toReg=findViewById(R.id.toReg);
         toReg.setOnClickListener(new View.OnClickListener()
         {
             public void onClick(View v) {

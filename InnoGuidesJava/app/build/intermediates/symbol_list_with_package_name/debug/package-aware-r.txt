@@ -56,6 +56,10 @@ animator mtrl_fab_hide_motion_spec
 animator mtrl_fab_show_motion_spec
 animator mtrl_fab_transformation_sheet_collapse_spec
 animator mtrl_fab_transformation_sheet_expand_spec
+array com_google_android_gms_fonts_certs
+array com_google_android_gms_fonts_certs_dev
+array com_google_android_gms_fonts_certs_prod
+array preloaded_fonts
 attr action
 attr actionBarDivider
 attr actionBarItemBackground
@@ -1679,6 +1683,7 @@ drawable notify_panel_notification_icon_bg
 drawable test_custom_background
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
+font electrolize
 id ALT
 id BOTTOM_END
 id BOTTOM_START
@@ -2040,8 +2045,6 @@ id textEnd
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
-id textView
-id textView2
 id text_input_end_icon
 id text_input_start_icon
 id textinput_counter
@@ -2148,8 +2151,7 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_info_window
 layout activity_main
-layout activity_maps
-layout activity_my_location
+layout activity_my_map
 layout activity_scrolling
 layout content_scrolling
 layout custom_dialog
@@ -2168,7 +2170,6 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
-layout map
 layout mtrl_alert_dialog
 layout mtrl_alert_dialog_actions
 layout mtrl_alert_dialog_title
@@ -2197,14 +2198,12 @@ layout mtrl_picker_header_title_text
 layout mtrl_picker_header_toggle
 layout mtrl_picker_text_input_date
 layout mtrl_picker_text_input_date_range
-layout ne_rabotaet
 layout notification_action
 layout notification_action_tombstone
 layout notification_template_custom_big
 layout notification_template_icon_group
 layout notification_template_part_chronometer
 layout notification_template_part_time
-layout rabotaet
 layout registration_page
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
@@ -2235,9 +2234,7 @@ raw innoguide_public_buildings
 raw innoguide_public_category_list
 raw innoguide_public_category_list_places
 raw innoguide_public_events
-raw innoguide_public_feedback
 raw innoguide_public_owner_contact
-raw innoguide_public_photo
 raw innoguide_public_place
 raw innoguide_public_place_working_days
 raw innoguide_public_place_working_time

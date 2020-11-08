@@ -2,32 +2,25 @@ com/example/innoguidesjava/DBhelper.java
  com.example.innoguidesjava.DBhelper
 com/example/innoguidesjava/BuildConfig.java
  com.example.innoguidesjava.BuildConfig
+com/example/innoguidesjava/MyMap.java
+ com.example.innoguidesjava.MyMap
+ com.example.innoguidesjava.MyMap$1
+ com.example.innoguidesjava.MyMap$1$1
 com/example/innoguidesjava/ScrollingActivity.java
  com.example.innoguidesjava.ScrollingActivity
  com.example.innoguidesjava.ScrollingActivity$1
-com/example/innoguidesjava/MapsActivity.java
- com.example.innoguidesjava.MapsActivity
+com/example/innoguidesjava/registration.java
+ com.example.innoguidesjava.registration
+ com.example.innoguidesjava.registration$1
 com/example/innoguidesjava/PermissionUtils.java
  com.example.innoguidesjava.PermissionUtils
  com.example.innoguidesjava.PermissionUtils$PermissionDeniedDialog
  com.example.innoguidesjava.PermissionUtils$RationaleDialog
  com.example.innoguidesjava.PermissionUtils$RationaleDialog$1
-com/example/innoguidesjava/InfoWindow.java
- com.example.innoguidesjava.InfoWindow
-com/example/innoguidesjava/Registration.java
- com.example.innoguidesjava.Registration
- com.example.innoguidesjava.Registration$1
 com/example/innoguidesjava/Place.java
  com.example.innoguidesjava.Place
-com/example/innoguidesjava/MyLocation.java
- com.example.innoguidesjava.MyLocation
- com.example.innoguidesjava.MyLocation$1
 com/example/innoguidesjava/JSONHelper.java
  com.example.innoguidesjava.JSONHelper
-com/example/innoguidesjava/Map.java
- com.example.innoguidesjava.Map
- com.example.innoguidesjava.Map$1
- com.example.innoguidesjava.Map$1$1
 com/example/innoguidesjava/MainActivity.java
  com.example.innoguidesjava.MainActivity
  com.example.innoguidesjava.MainActivity$1

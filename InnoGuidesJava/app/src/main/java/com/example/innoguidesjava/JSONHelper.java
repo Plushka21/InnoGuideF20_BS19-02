@@ -24,30 +24,22 @@ public class JSONHelper {
         String textPlace = readText(context, R.raw.innoguide_public_place);
         String placePhone = readText(context, R.raw.innoguide_public_owner_contact);
         String placeAddress = readText(context, R.raw.innoguide_public_buildings);
-        String placeTime = readText(context, R.raw.innoguide_public_place_working_time);
-        String placeDays = readText(context, R.raw.innoguide_public_place_working_days);
         List<Place> places = new ArrayList<>();
 
         JSONArray jsonRoot = new JSONArray(textPlace);
         JSONArray phones = new JSONArray(placePhone);
         JSONArray addresses = new JSONArray(placeAddress);
-        JSONArray Time = new JSONArray(placeTime);
-        JSONArray Days = new JSONArray(placeDays);
 
         for (int i = 0; i < jsonRoot.length(); i++){
             JSONObject placeInfo = jsonRoot.getJSONObject(i);
-            // Get name of place
             String pname = placeInfo.getString("pname");
-            //Get rating of place
             double rating = placeInfo.getDouble("rating");
-            // Get coordinates of place
-            String coor = placeInfo.getString("acoordinates");
+            String coor = placeInfo.getString("address");
             String[] c;
             c = coor.split(",");
             double c1 = Double.parseDouble(c[0]);
             double c2 = Double.parseDouble(c[1]);
 
-            // Find phone number of place in other DB
             String num = "";
             for (int j = 0; j < phones.length(); j++){
                 JSONObject pNum = phones.getJSONObject(j);
@@ -57,7 +49,6 @@ public class JSONHelper {
                 }
             }
 
-            // Find physical address of place in other DB
             String address = "";
             for (int j = 0; j < addresses.length(); j++){
                 JSONObject pAd = addresses.getJSONObject(j);
@@ -66,27 +57,7 @@ public class JSONHelper {
                     break;
                 }
             }
-
-            // Find wortking time of place in other DB
-            String time[] = new String[7];
-            for (int j = 0; j < Time.length(); j++){
-                JSONObject pT = Time.getJSONObject(j);
-                if (pT.getString("pname").equals(pname)){
-                    time = pT.getString("working_time").split(",");
-                    break;
-                }
-            }
-
-            String days[] = new String[7];
-            for (int j = 0; j < Days.length(); j++){
-                JSONObject pD = Days.getJSONObject(j);
-                if (pD.getString("pname").equals(pname)){
-                    days = pD.getString("working_days").split(",");
-                    break;
-                }
-            }
-
-            Place p = new Place(pname, num, address, c1, c2, time, days);
+            Place p = new Place(pname, num, address, c1, c2);
             p.setRating(rating);
             places.add(i, p);
         }
