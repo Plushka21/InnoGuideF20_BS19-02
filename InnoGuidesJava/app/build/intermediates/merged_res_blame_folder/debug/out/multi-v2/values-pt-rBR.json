@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\bugue\\AndroidStudioProjects\\InnoGuidesJava\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-pt-rBR\\values-pt-rBR.xml",
+            "outputFile": "C:\\Users\\bugue\\GitHub\\InnoGuideF20_BS19-02\\InnoGuidesJava\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-pt-rBR\\values-pt-rBR.xml",
             "map": [
                 {
                     "source": "C:\\Users\\bugue\\.gradle\\caches\\transforms-2\\files-2.1\\0615dd36bdcb2f6590bb0ac26e224203\\navigation-ui-2.2.2\\res\\values-pt-rBR\\values-pt-rBR.xml",

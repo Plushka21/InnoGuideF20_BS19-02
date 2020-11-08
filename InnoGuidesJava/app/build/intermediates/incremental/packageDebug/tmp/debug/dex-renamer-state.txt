@@ -1,4 +1,4 @@
-#Sun Nov 08 10:00:02 YEKT 2020
-base.0=C\:\\Users\\bugue\\AndroidStudioProjects\\InnoGuidesJava\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+#Sun Nov 08 11:00:10 YEKT 2020
+base.0=C\:\\Users\\bugue\\GitHub\\InnoGuideF20_BS19-02\\InnoGuidesJava\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
 path.0=classes.dex
 renamed.0=classes.dex

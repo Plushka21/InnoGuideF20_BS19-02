@@ -2146,7 +2146,9 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_info_window
 layout activity_main
+layout activity_maps
 layout activity_my_location
 layout activity_scrolling
 layout content_scrolling
@@ -2166,6 +2168,7 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout map
 layout mtrl_alert_dialog
 layout mtrl_alert_dialog_actions
 layout mtrl_alert_dialog_title
