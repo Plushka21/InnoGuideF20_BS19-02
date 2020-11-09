@@ -24,17 +24,20 @@ public class JSONHelper {
         String textPlace = readText(context, R.raw.innoguide_public_place);
         String placePhone = readText(context, R.raw.innoguide_public_owner_contact);
         String placeAddress = readText(context, R.raw.innoguide_public_buildings);
+        String placeCategory = readText(context, R.raw.innoguide_public_category_list_places);
         List<Place> places = new ArrayList<>();
 
         JSONArray jsonRoot = new JSONArray(textPlace);
         JSONArray phones = new JSONArray(placePhone);
         JSONArray addresses = new JSONArray(placeAddress);
+        JSONArray categories = new JSONArray(placeCategory);
 
         for (int i = 0; i < jsonRoot.length(); i++){
             JSONObject placeInfo = jsonRoot.getJSONObject(i);
             String pname = placeInfo.getString("pname");
             double rating = placeInfo.getDouble("rating");
-            String coor = placeInfo.getString("address");
+            String coor = placeInfo.getString("acoordinates");
+
             String[] c;
             c = coor.split(",");
             double c1 = Double.parseDouble(c[0]);
@@ -57,7 +60,17 @@ public class JSONHelper {
                     break;
                 }
             }
-            Place p = new Place(pname, num, address, c1, c2);
+          
+            String cat = "";
+            for (int j = 0; j < categories.length(); j++){
+                JSONObject pCat = categories.getJSONObject(j);
+                if (pCat.getString("pname").equals(pname)){
+                    cat = pCat.getString("cname");
+                    break;
+                }
+            }
+
+            Place p = new Place(pname, num, address, c1, c2, cat);
             p.setRating(rating);
             places.add(i, p);
         }

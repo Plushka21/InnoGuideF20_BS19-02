@@ -4,8 +4,8 @@
     "pname": "Innopolis University"
   },
   {
-    "cname": "place to rest",
-    "pname": "ArtSpase"
+"cname": "rest",
+    "pname": "ArtSpace"
   },
   {
     "cname": "supermarkets",
@@ -20,8 +20,7 @@
     "pname": "Sportcomplex"
   },
   {
-    "cname": "place to rest",
-    "pname": "Sportcomplex"
+"cname": "rest",
   },
   {
     "cname": "supermarkets",
@@ -30,5 +29,10 @@
   {
     "cname": "education",
     "pname": "Innopolis Lyceum"
+
+  },
+  {
+    "cname": "bar",
+    "pname": "Bar 108"
   }
 ]

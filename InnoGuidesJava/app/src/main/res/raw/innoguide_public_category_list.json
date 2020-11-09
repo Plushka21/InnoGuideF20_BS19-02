@@ -1,32 +1,37 @@
 [
   {
+"id": 1,
     "cname": "supermarkets",
     "number_of_places": 2,
-    "icon": null,
-    "colour": null
+    "icon": "image/supermarkets",
+    "colour": "E'\\\\xFFFFFF'"
   },
   {
+    "id": 2,
     "cname": "sport",
     "number_of_places": 1,
-    "icon": null,
-    "colour": null
+    "icon": "images/sport",
+    "colour": "E'\\\\xFFFFFF'"
   },
   {
+    "id": 3,
     "cname": "education",
     "number_of_places": 2,
-    "icon": null,
-    "colour": null
+    "icon": "images/education",
+    "colour": "E'\\\\xFFFFFF'"
   },
   {
-    "cname": "place to rest",
+    "id": 4,
+    "cname": "rest",
     "number_of_places": 2,
-    "icon": null,
-    "colour": null
+    "icon": "images/rest",
+    "colour": "E'\\\\xFFFFFF'"
   },
   {
+    "id": 5,
     "cname": "pyaterochka",
     "number_of_places": 1,
-    "icon": null,
-    "colour": null
+    "icon": "image/5ka",
+    "colour": "E'\\\\xAFAFAF'"
   }
 ]
