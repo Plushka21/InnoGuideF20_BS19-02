@@ -60,7 +60,7 @@ public class JSONHelper {
                     break;
                 }
             }
-
+          
             String cat = "";
             for (int j = 0; j < categories.length(); j++){
                 JSONObject pCat = categories.getJSONObject(j);
