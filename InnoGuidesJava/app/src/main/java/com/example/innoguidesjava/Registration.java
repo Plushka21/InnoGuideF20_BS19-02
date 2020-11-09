@@ -9,7 +9,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-public class registration extends AppCompatActivity {
+public class Registration extends AppCompatActivity {
     private EditText password,email,cPassword;
     private Button toReg;
     DBhelper db;
