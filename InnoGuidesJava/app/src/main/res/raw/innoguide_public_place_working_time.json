@@ -1,26 +1,26 @@
 [
   {
     "pname": "Innopolis University",
-    "working_time": "8:00 - 23:00"
+    "working_time": "8:00-23:00"
   },
   {
     "pname": "ArtSpace",
-    "working_time": "10:00 - 23:00"
+    "working_time": "10:00-23:00"
   },
   {
     "pname": "Pyaterochka",
-    "working_time": "10:00 - 22:00"
+    "working_time": "10:00-22:00"
   },
   {
     "pname": "Sportcomplex",
-    "working_time": "8:00 - 22:00"
+    "working_time": "8:00-22:00"
   },
   {
     "pname": "Magnit",
-    "working_time": "9:00 - 23:00"
+    "working_time": "9:00-23:00"
   },
   {
     "pname": "Innopolis Lyceum",
-    "working_time": "7:00 - 20:00"
+    "working_time": "7:00-20:00"
   }
 ]

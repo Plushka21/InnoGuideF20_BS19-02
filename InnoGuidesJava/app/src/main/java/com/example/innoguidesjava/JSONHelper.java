@@ -1,6 +1,7 @@
 package com.example.innoguidesjava;
 
 import android.content.Context;
+
 import com.google.gson.Gson;
 
 import org.json.JSONArray;
@@ -23,19 +24,19 @@ public class JSONHelper {
     public static List<Place> readPlaceJSONFile(Context context) throws IOException, JSONException {
         String textPlace = readText(context, R.raw.innoguide_public_place);
         String placePhone = readText(context, R.raw.innoguide_public_owner_contact);
-        String placeAddress = readText(context, R.raw.innoguide_public_buildings);
         String placeCategory = readText(context, R.raw.innoguide_public_category_list_places);
+        String placeFeedback = readText(context, R.raw.innoguide_public_feedback);
         List<Place> places = new ArrayList<>();
 
         JSONArray jsonRoot = new JSONArray(textPlace);
         JSONArray phones = new JSONArray(placePhone);
-        JSONArray addresses = new JSONArray(placeAddress);
         JSONArray categories = new JSONArray(placeCategory);
+        JSONArray feedback = new JSONArray(placeFeedback);
 
-        for (int i = 0; i < jsonRoot.length(); i++){
+        for (int i = 0; i < jsonRoot.length(); i++) {
             JSONObject placeInfo = jsonRoot.getJSONObject(i);
             String pname = placeInfo.getString("pname");
-            double rating = placeInfo.getDouble("rating");
+            String address = placeInfo.getString("address");
             String coor = placeInfo.getString("acoordinates");
 
             String[] c;
@@ -44,28 +45,28 @@ public class JSONHelper {
             double c2 = Double.parseDouble(c[1]);
 
             String num = "";
-            for (int j = 0; j < phones.length(); j++){
+            for (int j = 0; j < phones.length(); j++) {
                 JSONObject pNum = phones.getJSONObject(j);
-                if (pNum.getString("pname").equals(pname)){
+                if (pNum.getString("pname").equals(pname)) {
                     num = pNum.getString("contact_details");
                     break;
                 }
             }
 
-            String address = "";
-            for (int j = 0; j < addresses.length(); j++){
-                JSONObject pAd = addresses.getJSONObject(j);
-                if (pAd.getString("bcoordinates").equals(coor)){
-                    address = pAd.getString("bstreet");
+            String cat = "";
+            for (int j = 0; j < categories.length(); j++) {
+                JSONObject pCat = categories.getJSONObject(j);
+                if (pCat.getString("pname").equals(pname)) {
+                    cat = pCat.getString("cname");
                     break;
                 }
             }
 
-            String cat = "";
-            for (int j = 0; j < categories.length(); j++){
-                JSONObject pCat = categories.getJSONObject(j);
-                if (pCat.getString("pname").equals(pname)){
-                    cat = pCat.getString("cname");
+            double rating = 0;
+            for (int j = 0; j < feedback.length(); j++) {
+                JSONObject pRat = feedback.getJSONObject(j);
+                if (pRat.getString("place_name").equals(pname)) {
+                    rating = pRat.getDouble("rating");
                     break;
                 }
             }
@@ -79,10 +80,10 @@ public class JSONHelper {
 
     private static String readText(Context context, int resId) throws IOException {
         InputStream is = context.getResources().openRawResource(resId);
-        BufferedReader br= new BufferedReader(new InputStreamReader(is));
-        StringBuilder sb= new StringBuilder();
-        String s= null;
-        while((  s = br.readLine())!=null) {
+        BufferedReader br = new BufferedReader(new InputStreamReader(is));
+        StringBuilder sb = new StringBuilder();
+        String s = null;
+        while ((s = br.readLine()) != null) {
             sb.append(s);
             sb.append("\n");
         }

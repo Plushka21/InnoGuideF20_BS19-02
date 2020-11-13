@@ -14,9 +14,9 @@ import com.google.android.gms.maps.GoogleMap.OnMyLocationButtonClickListener;
 import com.google.android.gms.maps.GoogleMap.OnMyLocationClickListener;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
-import com.google.android.gms.maps.model.BitmapDescriptor;
 import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.MapStyleOptions;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.maps.model.Polyline;
@@ -38,8 +38,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentTransaction;
 
 import android.view.View;
 import android.widget.Toast;
@@ -50,7 +48,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MyMap extends AppCompatActivity
+public class Map extends AppCompatActivity
         implements
         OnMyLocationButtonClickListener,
         OnMyLocationClickListener,
@@ -72,6 +70,7 @@ public class MyMap extends AppCompatActivity
      */
     private boolean permissionDenied = false;
     private GoogleMap map;
+
     private List<Place> places;
 
     //current and destination location objects
@@ -92,7 +91,7 @@ public class MyMap extends AppCompatActivity
             e.printStackTrace();
         }
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_my_map);
+        setContentView(R.layout.map);
 
         SupportMapFragment mapFragment =
                 (SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.map);
@@ -104,31 +103,42 @@ public class MyMap extends AppCompatActivity
         map = googleMap;
         map.setOnMyLocationButtonClickListener(this);
         map.setOnMyLocationClickListener(this);
+
+        //DELETIN GOOGLE STANDARD ICONS
+        map.setMapStyle(
+                MapStyleOptions.loadRawResourceStyle(
+                        this, R.raw.map_style));
+
         enableMyLocation();
         getMyLocation();
-
         addMarker(places);
 
+        // POP UP WINDOW WITH INFORMATION
         map.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {
             @Override
             public boolean onMarkerClick(Marker marker) {
-//            Intent intent = new Intent(MyLocation.this, ScrollingActivity.class);
-//            startActivity(intent);
                 Fragment info = null;
                 String name = marker.getTitle();
                 Place p = places.get(Math.round(marker.getZIndex()));
-                AlertDialog.Builder builder = new AlertDialog.Builder(MyMap.this);
+                AlertDialog.Builder builder = new AlertDialog.Builder(Map.this);
                 builder
                         .setTitle("Place Info")
                         .setPositiveButton("OK", null)
                         .setNegativeButton("Get more info", new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
-                                //ScrollingActivity info = new ScrollingActivity(name, p.getAddress(), p.getNumber(), p.getRating());
-                                Intent intent = new Intent(MyMap.this, ScrollingActivity.class);
-                                startActivity(intent);
+                                Intent intent = new Intent(Map.this, DetailedInfoWindow.class);
+
+                                //TAKING DATA FROM THIS MARKER AND PASSING IT TO ScrollingActivity.class
+                                intent.putExtra("Rating", String.valueOf(p.getRating()));
+                                intent.putExtra("Address", p.getAddress());
+                                intent.putExtra("Phone Number", p.getNumber());
+                                intent.putExtra("Name", marker.getTitle());
+
+                                Map.this.startActivity(intent);
                             }
                         })
+
                         .setNeutralButton("Build route", new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
@@ -138,7 +148,7 @@ public class MyMap extends AppCompatActivity
 
                                 start = new LatLng(myLocation.getLatitude(), myLocation.getLongitude());
                                 //start route finding
-                                Findroutes(start, end);
+                                findRoutes(start, end);
                             }
                         })
                         .setMessage("Name: " + name +
@@ -159,8 +169,8 @@ public class MyMap extends AppCompatActivity
         moveCamera(inno);
     }
 
-    public void addMarker(List<Place> places){
-                for (int i = 0; i < places.size(); i++) {
+    public void addMarker(List<Place> places) {
+        for (int i = 0; i < places.size(); i++) {
             String name = places.get(i).getName();
             String category = places.get(i).getCategory();
 
@@ -169,7 +179,6 @@ public class MyMap extends AppCompatActivity
                         .position(new LatLng(places.get(i).getC1(), places.get(i).getC2()))
                         .title(name)
                         .zIndex(i)
-                        /*.icon(BitmapDescriptorFactory.fromResource(R.drawable.supermarkets))*/
                         .icon(BitmapDescriptorFactory.fromBitmap(resizeMapIcons(category, 100, 100))));
             } else {
                 map.addMarker(new MarkerOptions()
@@ -201,7 +210,6 @@ public class MyMap extends AppCompatActivity
 
     @Override
     public boolean onMyLocationButtonClick() {
-        Toast.makeText(this, "MyLocation button clicked", Toast.LENGTH_SHORT).show();
         // Return false so that we don't consume the event and the default behavior still occurs
         // (the camera animates to the user's current position).
         return false;
@@ -209,7 +217,7 @@ public class MyMap extends AppCompatActivity
 
     @Override
     public void onMyLocationClick(@NonNull Location location) {
-        Toast.makeText(this, "Current location:\n" + location, Toast.LENGTH_LONG).show();
+
     }
 
     // [START maps_check_location_permission_result]
@@ -220,7 +228,6 @@ public class MyMap extends AppCompatActivity
         }
 
         if (PermissionUtils.isPermissionGranted(permissions, grantResults, Manifest.permission.ACCESS_FINE_LOCATION)) {
-            // Enable the my location layer if the permission has been granted.
             enableMyLocation();
         } else {
             // Permission was denied. Display an error message
@@ -261,10 +268,11 @@ public class MyMap extends AppCompatActivity
         return resizedBitmap;
     }
 
-    // function to find Routes.
-    public void Findroutes(LatLng Start, LatLng End) {
+
+    // ROUTING PART !!!!!
+    public void findRoutes(LatLng Start, LatLng End) {
         if (Start == null || End == null) {
-            Toast.makeText(MyMap.this, "Unable to get location", Toast.LENGTH_LONG).show();
+            Toast.makeText(Map.this, "Unable to get location", Toast.LENGTH_LONG).show();
         } else {
 
             Routing routing = new Routing.Builder()
@@ -284,14 +292,12 @@ public class MyMap extends AppCompatActivity
         View parentLayout = findViewById(android.R.id.content);
         Snackbar snackbar = Snackbar.make(parentLayout, e.toString(), Snackbar.LENGTH_LONG);
         snackbar.show();
-//        Findroutes(start,end);
-
         addMarker(places);
     }
 
     @Override
     public void onRoutingStart() {
-        Toast.makeText(MyMap.this, "Finding Route...", Toast.LENGTH_LONG).show();
+        Toast.makeText(Map.this, "Finding Route...", Toast.LENGTH_LONG).show();
         addMarker(places);
     }
 
@@ -323,8 +329,6 @@ public class MyMap extends AppCompatActivity
                 polylineEndLatLng = polyline.getPoints().get(k - 1);
                 polylines.add(polyline);
 
-            } else {
-
             }
 
         }
@@ -346,12 +350,12 @@ public class MyMap extends AppCompatActivity
 
     @Override
     public void onRoutingCancelled() {
-        Findroutes(start, end);
+        findRoutes(start, end);
     }
 
     @Override
     public void onConnectionFailed(@NonNull ConnectionResult connectionResult) {
-        Findroutes(start, end);
+        findRoutes(start, end);
 
     }
 

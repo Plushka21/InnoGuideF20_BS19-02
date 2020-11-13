@@ -20,7 +20,7 @@
     "pname": "Sportcomplex"
   },
   {
-    "cname": "rest",
+    "cname": "place to rest",
     "pname": "Sportcomplex"
   },
   {
@@ -30,9 +30,5 @@
   {
     "cname": "education",
     "pname": "Innopolis Lyceum"
-  },
-  {
-    "cname": "bar",
-    "pname": "Bar 108"
   }
 ]

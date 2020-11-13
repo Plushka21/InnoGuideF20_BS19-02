@@ -1,26 +1,37 @@
 [
   {
     "place_name": "Innopolis University",
+    "rating": 3.34,
     "feedback": "good university"
   },
   {
     "place_name": "Sportcomplex",
+    "rating": 4.53,
     "feedback": "I love it, gym especially"
   },
   {
     "place_name": "Pyaterochka",
+    "rating": 2.34,
     "feedback": "best shop"
   },
   {
     "place_name": "Innopolis University",
+    "rating": 4.43,
     "feedback": "very hard("
   },
   {
     "place_name": "Innopolis University",
+    "rating": 4.21,
     "feedback": "gde stipa?"
   },
   {
     "place_name": "Sportcomplex",
+    "rating": 4.7,
     "feedback": "I love basketball, so it is my second home :)"
+  },
+  {
+    "place_name": "Pyaterochka",
+    "rating": 5,
+    "feedback": ""
   }
 ]

@@ -5,7 +5,7 @@ public class Place {
     private String name, number, address, category;
     private double rating, c1, c2; // c1,c2 - coordinates
 
-    public Place(String name, String number, String address, double c1, double c2, String category){
+    public Place(String name, String number, String address, double c1, double c2, String category) {
         this.name = name;
         this.number = number;
         this.address = address;
