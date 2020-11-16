@@ -134,6 +134,8 @@ public class Map extends AppCompatActivity
                                 intent.putExtra("Address", p.getAddress());
                                 intent.putExtra("Phone Number", p.getNumber());
                                 intent.putExtra("Name", marker.getTitle());
+                                intent.putExtra("Photo", "magnit");
+                                intent.putExtra("Time", p.getWorking_time());
 
                                 Map.this.startActivity(intent);
                             }
@@ -152,12 +154,8 @@ public class Map extends AppCompatActivity
                             }
                         })
                         .setMessage("Name: " + name +
-                                "\n\nRating: " + p.getRating() +
                                 "\n\nAddress: " + p.getAddress() +
-                                "\n\nPhone: " + p.getNumber() /*
-                        "\n\nWorking time:\n" + this.days[0] + this.days[1] + this.days[2]
-                        + this.days[3] + this.days[4] + this.days[5] + this.days[6] + "\n"
-                        + this.time[0]*/);
+                                "\n\nRating: " + p.getRating());
                 AlertDialog ald = builder.create();
                 ald.show();
                 return false;
@@ -186,7 +184,6 @@ public class Map extends AppCompatActivity
                         .title(name)
                         .zIndex(i));
             }
-
         }
     }
 

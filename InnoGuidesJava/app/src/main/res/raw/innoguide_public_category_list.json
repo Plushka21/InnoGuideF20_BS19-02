@@ -33,5 +33,12 @@
     "number_of_places": 1,
     "icon": "image/5ka",
     "colour": "E'\\\\xAFAFAF'"
+  },
+  {
+    "id": 6,
+    "cname": "bar",
+    "number_of_places": 1,
+    "icon": "image/bar",
+    "colour": "E'\\\\xFFFFFF'"
   }
 ]

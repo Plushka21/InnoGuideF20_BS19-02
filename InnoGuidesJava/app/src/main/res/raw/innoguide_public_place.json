@@ -2,7 +2,7 @@
   {
     "id": 1,
     "pname": "Innopolis University",
-    "owner": null,
+    "owner": "",
     "build_root": null,
     "description": "the best university",
     "address": "Universitetskaya 1",
@@ -11,7 +11,7 @@
   {
     "id": 2,
     "pname": "Sportcomplex",
-    "owner": null,
+    "owner": "",
     "build_root": null,
     "description": "good sportcomplex)",
     "address": "Sportivnaya 107",
@@ -20,7 +20,7 @@
   {
     "id": 3,
     "pname": "Pyaterochka",
-    "owner": null,
+    "owner": "",
     "build_root": null,
     "description": "<3",
     "address": "Sportivnaya 126",
@@ -41,7 +41,7 @@
     "owner": "Deniska",
     "build_root": "Innopolis University",
     "description": "best place for chill",
-    "address": "Parkovaya street 1",
+    "address": "Parkovaya Street 1",
     "acoordinates": "55.744227,48.748974"
   },
   {
@@ -50,7 +50,7 @@
     "owner": "Alex",
     "build_root": "Innopolis University",
     "description": "one love!",
-    "address": "Kvantoviy bulvar 1",
+    "address": "Kvantoviy Bulvar 1",
     "acoordinates": "55.747976,48.746845"
   },
   {
@@ -59,7 +59,7 @@
     "owner": "Anatoliy",
     "build_root": "Innopolis University",
     "description": "cure for your soul",
-    "address": null,
+    "address": "",
     "acoordinates": "55.748316,48.741932"
   }
 ]

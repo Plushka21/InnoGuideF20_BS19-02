@@ -12,7 +12,6 @@ public class DBhelper extends SQLiteOpenHelper {
 
     public DBhelper(@Nullable Context context) {
         super(context, "InnoGuides.db", null, 1);
-
     }
 
     @Override
@@ -40,7 +39,6 @@ public class DBhelper extends SQLiteOpenHelper {
         Cursor cursor = db.rawQuery("SELECT * FROM Login WHERE email=?", new String[]{email});
         if (cursor.getCount() > 0) return false;
         else return true;
-
     }
 
     public boolean authorization(String Uemail, String Upassword) {

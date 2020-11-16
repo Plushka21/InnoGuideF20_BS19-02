@@ -25,13 +25,13 @@
     "feedback": "gde stipa?"
   },
   {
-    "place_name": "Sportcomplex",
-    "rating": 4.7,
-    "feedback": "I love basketball, so it is my second home :)"
-  },
-  {
     "place_name": "Pyaterochka",
     "rating": 5,
     "feedback": ""
+  },
+  {
+    "place_name": "Sportcomplex",
+    "rating": 4.7,
+    "feedback": "I love basketball, so it is my second home :)"
   }
 ]
