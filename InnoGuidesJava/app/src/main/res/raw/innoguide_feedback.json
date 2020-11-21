@@ -1,0 +1,42 @@
+[
+  {
+    "pname": "Innopolis University",
+    "rating": 3.34,
+    "feedback": "good university"
+  },
+  {
+    "pname": "Sportcomplex",
+    "rating": 4.53,
+    "feedback": "I love it, gym especially"
+  },
+  {
+    "pname": "Pyaterochka",
+    "rating": 2.34,
+    "feedback": "best shop"
+  },
+  {
+    "pname": "Innopolis University",
+    "rating": 4.43,
+    "feedback": "very hard("
+  },
+  {
+    "pname": "Innopolis University",
+    "rating": 4.21,
+    "feedback": "gde stipa?"
+  },
+  {
+    "pname": "Pyaterochka",
+    "rating": 5,
+    "feedback": ""
+  },
+  {
+    "pname": "Pyaterochka",
+    "rating": 5,
+    "feedback": ""
+  },
+  {
+    "pname": "Sportcomplex",
+    "rating": 4.7,
+    "feedback": "I love basketball, so it is my second home :)"
+  }
+]

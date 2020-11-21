@@ -8,13 +8,12 @@
     tools:context=".DetailedInfoWindow">
 
 
-    <com.denzcoskun.imageslider.ImageSlider
+    <ViewFlipper
         android:id="@+id/photos"
         android:layout_width="match_parent"
-        android:layout_height="200dp">
-
-
-    </com.denzcoskun.imageslider.ImageSlider>
+        android:layout_height="200dp"
+        android:inAnimation="@anim/flipin"
+        android:outAnimation="@anim/flipout"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -107,6 +106,7 @@
             android:textSize="18sp" />
 
     </LinearLayout>
+
 
     <TableLayout
         android:layout_width="match_parent"

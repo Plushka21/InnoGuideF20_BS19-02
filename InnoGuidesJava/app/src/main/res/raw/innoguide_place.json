@@ -1,0 +1,227 @@
+[
+  {
+    "ID": 1,
+    "pname": "Innopolis University",
+    "owner": "",
+    "build_root": null,
+    "description": "the best university",
+    "address": "Universitetskaya st. 1",
+    "acoordinates": "55.752994,48.744084"
+  },
+  {
+    "ID": 2,
+    "pname": "Sportcomplex",
+    "owner": "",
+    "build_root": null,
+    "description": "good sportcomplex)",
+    "address": "Sportivnaya st. 107",
+    "acoordinates": "55.751387,48.742658"
+  },
+  {
+    "ID": 3,
+    "pname": "Pyaterochka",
+    "owner": "",
+    "build_root": null,
+    "description": "<3",
+    "address": "Sportivnaya st. 126",
+    "acoordinates": "55.749040,48.743755"
+  },
+  {
+    "ID": 4,
+    "pname": "Magnit",
+    "owner": "Pavel",
+    "build_root": "Innopolis University",
+    "description": "sometimes good",
+    "address": "Sportivnaya st. 110",
+    "acoordinates": "55.747844,48.742623"
+  },
+  {
+    "ID": 5,
+    "pname": "ArtSpace",
+    "owner": "Deniska",
+    "build_root": "Innopolis University",
+    "description": "best place for chill",
+    "address": "Parkovaya st. 1",
+    "acoordinates": "55.744227,48.748974"
+  },
+  {
+    "ID": 6,
+    "pname": "Innopolis Lyceum",
+    "owner": "Alex",
+    "build_root": "Innopolis University",
+    "description": "one love!",
+    "address": "Kvantoviy boulevard, 1",
+    "acoordinates": "55.747976,48.746845"
+  },
+  {
+    "ID": 7,
+    "pname": "bar 108",
+    "owner": "Anatoliy",
+    "build_root": null,
+    "description": "cure for your soul",
+    "address": "Sportivnaya st. 102 ",
+    "acoordinates": "55.748316,48.741932"
+  },
+  {
+    "ID": 8,
+    "pname": "Campus",
+    "owner": "University",
+    "build_root": null,
+    "description": "University`s campus",
+    "address": "Universitetskaya st. 1/3",
+    "acoordinates": "55.753762,48.740593"
+  },
+  {
+    "ID": 9,
+    "pname": "Cacio e vino",
+    "owner": "",
+    "build_root": null,
+    "description": "Cacio e vino",
+    "address": "Sportivnaya st. 100",
+    "acoordinates": "55.747799,48.741393"
+  },
+  {
+    "ID": 10,
+    "pname": "Bahetle",
+    "owner": "",
+    "build_root": null,
+    "description": "Bahetle",
+    "address": "Sportivnaya st. 104",
+    "acoordinates": "55.747262,48.743072"
+  },
+  {
+    "ID": 11,
+    "pname": "Dom knigi",
+    "owner": "",
+    "build_root": null,
+    "description": "book`s shop",
+    "address": "Sportivnaya st. 122",
+    "acoordinates": "55.747956,48.744959"
+  },
+  {
+    "ID": 12,
+    "pname": "Hostelinn",
+    "owner": "",
+    "build_root": null,
+    "description": "Hostelinn",
+    "address": "Sportivnaya st. 106",
+    "acoordinates": "55.746745,48.743818"
+  },
+  {
+    "ID": 13,
+    "pname": "Magiya cvetov",
+    "owner": "",
+    "build_root": null,
+    "description": "flower`s shop",
+    "address": "Sportivnaya st. 110",
+    "acoordinates": "55.747845,48.742623"
+  },
+  {
+    "ID": 14,
+    "pname": "Patefon Faini Karlovny",
+    "owner": "",
+    "build_root": null,
+    "description": "Patefon Faini Karlovny",
+    "address": "Sportivnaya st. 120",
+    "acoordinates": "55.748447,48.744249"
+  },
+  {
+    "ID": 15,
+    "pname": "Kindergarten `Art Kids`",
+    "owner": "",
+    "build_root": null,
+    "description": "Kindergarten `Art Kids`",
+    "address": "Sportivnaya st. 130",
+    "acoordinates": "55.748518,48.745489"
+  },
+  {
+    "ID": 16,
+    "pname": "Police",
+    "owner": "",
+    "build_root": null,
+    "description": "Police office",
+    "address": "Sportivnaya st. 112",
+    "acoordinates": "55.747844,48.743584"
+  },
+  {
+    "ID": 17,
+    "pname": "City Hall",
+    "owner": "",
+    "build_root": null,
+    "description": "City Hall",
+    "address": "Sportivnaya st. 114",
+    "acoordinates": "55.747348,48.744321"
+  },
+  {
+    "ID": 18,
+    "pname": "Kindergarten",
+    "owner": "",
+    "build_root": null,
+    "description": "Kindergarten",
+    "address": "Kvantoviy boulevard, 2",
+    "acoordinates": "55.746421,48.745651"
+  },
+  {
+    "ID": 19,
+    "pname": "School",
+    "owner": "",
+    "build_root": null,
+    "description": "School",
+    "address": "Parkovaya st. 22",
+    "acoordinates": "55.743502,48.740270"
+  },
+  {
+    "ID": 20,
+    "pname": "Technopark named after Popov",
+    "owner": "",
+    "build_root": null,
+    "description": "Technopark named after Popov",
+    "address": "Universitetskaya st. 7",
+    "acoordinates": "55.751872,48.752936"
+  },
+  {
+    "ID": 21,
+    "pname": "FunRide",
+    "owner": "",
+    "build_root": null,
+    "description": "FunRide",
+    "address": "Sportivnaya st. 102",
+    "acoordinates": "55.747292,48.742084"
+  },
+  {
+    "ID": 22,
+    "pname": "Matur",
+    "owner": "",
+    "build_root": null,
+    "description": "Matur",
+    "address": "Sportivnaya st. 124",
+    "acoordinates": "55.749516,48.743045"
+  },
+  {
+    "ID": 23,
+    "pname": "InnoWashing",
+    "owner": "",
+    "build_root": null,
+    "description": "InnoWashing",
+    "address": "Sportivnaya st. 106",
+    "acoordinates": "55.746746,48.743818"
+  },
+  {
+    "ID": 24,
+    "pname": "Medical center",
+    "owner": "",
+    "build_root": null,
+    "description": "Matur",
+    "address": "Sportivnaya st. 301",
+    "acoordinates": "55.756579,48.745363"
+  },
+  {
+    "ID": 25,
+    "pname": "Pharmacy",
+    "owner": "",
+    "build_root": null,
+    "description": "Matur",
+    "address": "Sportivnaya st. 118",
+    "acoordinates": "55.748458,48.743243"
+  }
+]

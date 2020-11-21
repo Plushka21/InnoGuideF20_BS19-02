@@ -1,0 +1,149 @@
+[
+  {
+    "type": "table",
+    "name": "category_list",
+    "tbl_name": "category_list",
+    "rootpage": 2,
+    "sql": "CREATE TABLE category_list\r\n(\r\n    ID               INT PRIMARY KEY,\r\n    cname            VARCHAR(150) UNIQUE NOT NULL,\r\n    number_of_places INT DEFAULT 0,\r\n    icon             bytea,\r\n    colour           bytea\r\n)"
+  },
+  {
+    "type": "index",
+    "name": "sqlite_autoindex_category_list_1",
+    "tbl_name": "category_list",
+    "rootpage": 3,
+    "sql": null
+  },
+  {
+    "type": "index",
+    "name": "sqlite_autoindex_category_list_2",
+    "tbl_name": "category_list",
+    "rootpage": 4,
+    "sql": null
+  },
+  {
+    "type": "table",
+    "name": "place",
+    "tbl_name": "place",
+    "rootpage": 5,
+    "sql": "CREATE TABLE place\r\n(\r\n    ID           INT PRIMARY KEY,\r\n    pname        VARCHAR(150) UNIQUE NOT NULL,\r\n    owner        VARCHAR(150) DEFAULT '',\r\n    build_root   VARCHAR(150),\r\n    description  VARCHAR(1500) DEFAULT '',\r\n    address      VARCHAR(150) DEFAULT '',\r\n    acoordinates VARCHAR(150) UNIQUE NOT NULL,\r\n    FOREIGN KEY (build_root) REFERENCES place (pname) ON UPDATE CASCADE ON DELETE CASCADE\r\n)"
+  },
+  {
+    "type": "index",
+    "name": "sqlite_autoindex_place_1",
+    "tbl_name": "place",
+    "rootpage": 6,
+    "sql": null
+  },
+  {
+    "type": "index",
+    "name": "sqlite_autoindex_place_2",
+    "tbl_name": "place",
+    "rootpage": 7,
+    "sql": null
+  },
+  {
+    "type": "index",
+    "name": "sqlite_autoindex_place_3",
+    "tbl_name": "place",
+    "rootpage": 8,
+    "sql": null
+  },
+  {
+    "type": "table",
+    "name": "events",
+    "tbl_name": "events",
+    "rootpage": 9,
+    "sql": "CREATE TABLE events\r\n(\r\n    ID          INT PRIMARY KEY,\r\n    ename       VARCHAR(150) UNIQUE NOT NULL,\r\n    edate       VARCHAR(150)        NOT NULL,\r\n    etime       VARCHAR(150)        NOT NULL,\r\n    event_place VARCHAR(150)        NOT NULL,\r\n    poster      bytea,\r\n    FOREIGN KEY (event_place) REFERENCES place (pname) ON UPDATE CASCADE ON DELETE CASCADE\r\n)"
+  },
+  {
+    "type": "index",
+    "name": "sqlite_autoindex_events_1",
+    "tbl_name": "events",
+    "rootpage": 10,
+    "sql": null
+  },
+  {
+    "type": "index",
+    "name": "sqlite_autoindex_events_2",
+    "tbl_name": "events",
+    "rootpage": 11,
+    "sql": null
+  },
+  {
+    "type": "table",
+    "name": "place_working_days",
+    "tbl_name": "place_working_days",
+    "rootpage": 12,
+    "sql": "CREATE TABLE place_working_days\r\n(\r\n    pname        VARCHAR(150) UNIQUE NOT NULL,\r\n    working_days VARCHAR(150)        NOT NULL,\r\n    FOREIGN KEY (pname) REFERENCES place (pname) ON UPDATE CASCADE ON DELETE CASCADE\r\n)"
+  },
+  {
+    "type": "index",
+    "name": "sqlite_autoindex_place_working_days_1",
+    "tbl_name": "place_working_days",
+    "rootpage": 13,
+    "sql": null
+  },
+  {
+    "type": "table",
+    "name": "place_working_time",
+    "tbl_name": "place_working_time",
+    "rootpage": 14,
+    "sql": "CREATE TABLE place_working_time\r\n(\r\n    pname        VARCHAR(150) UNIQUE NOT NULL,\r\n    working_time VARCHAR(150)        NOT NULL,\r\n    FOREIGN KEY (pname) REFERENCES place (pname) ON UPDATE CASCADE ON DELETE CASCADE\r\n)"
+  },
+  {
+    "type": "index",
+    "name": "sqlite_autoindex_place_working_time_1",
+    "tbl_name": "place_working_time",
+    "rootpage": 15,
+    "sql": null
+  },
+  {
+    "type": "table",
+    "name": "category_list_places",
+    "tbl_name": "category_list_places",
+    "rootpage": 16,
+    "sql": "CREATE TABLE category_list_places\r\n(\r\n    cname VARCHAR(150) NOT NULL,\r\n    pname VARCHAR(150) NOT NULL,\r\n    FOREIGN KEY (cname) REFERENCES category_list (cname) ON UPDATE CASCADE ON DELETE CASCADE ,\r\n    FOREIGN KEY (pname) REFERENCES place (pname) ON UPDATE CASCADE ON DELETE CASCADE ,\r\n    CONSTRAINT order_key PRIMARY KEY (cname, pname)\r\n)"
+  },
+  {
+    "type": "index",
+    "name": "sqlite_autoindex_category_list_places_1",
+    "tbl_name": "category_list_places",
+    "rootpage": 18,
+    "sql": null
+  },
+  {
+    "type": "table",
+    "name": "owner_contact",
+    "tbl_name": "owner_contact",
+    "rootpage": 19,
+    "sql": "CREATE TABLE owner_contact\r\n(\r\n    pname           VARCHAR(150)        NOT NULL,\r\n    contact_details VARCHAR(150) UNIQUE NOT NULL,\r\n    FOREIGN KEY (pname) REFERENCES place (pname) ON UPDATE CASCADE ON DELETE CASCADE\r\n)"
+  },
+  {
+    "type": "index",
+    "name": "sqlite_autoindex_owner_contact_1",
+    "tbl_name": "owner_contact",
+    "rootpage": 20,
+    "sql": null
+  },
+  {
+    "type": "table",
+    "name": "photo",
+    "tbl_name": "photo",
+    "rootpage": 21,
+    "sql": "CREATE TABLE photo\r\n(\r\n    place_name VARCHAR(150) NOT NULL,\r\n    photo      bytea UNIQUE NOT NULL,\r\n    FOREIGN KEY (place_name) REFERENCES place (pname) ON UPDATE CASCADE ON DELETE CASCADE\r\n)"
+  },
+  {
+    "type": "index",
+    "name": "sqlite_autoindex_photo_1",
+    "tbl_name": "photo",
+    "rootpage": 22,
+    "sql": null
+  },
+  {
+    "type": "table",
+    "name": "feedback",
+    "tbl_name": "feedback",
+    "rootpage": 17,
+    "sql": "CREATE TABLE feedback\r\n(\r\n    place_name VARCHAR(150) NOT NULL,\r\n    rating     FLOAT        NOT NULL,\r\n    feedback   VARCHAR(150),\r\n    FOREIGN KEY (place_name) REFERENCES place (pname) ON UPDATE CASCADE ON DELETE CASCADE\r\n)"
+  }
+]

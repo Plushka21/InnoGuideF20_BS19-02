@@ -42,7 +42,7 @@ public class AuthorizationPage extends AppCompatActivity {
                 String Email = email.getText().toString();
                 boolean checker = db.authorization(Email, Password);
                 if (checker) {
-                    Intent loc = new Intent(AuthorizationPage.this, Map.class);
+                    Intent loc = new Intent(AuthorizationPage.this, MainMap.class);
                     startActivity(loc);
                 } else
                     Toast.makeText(getApplicationContext(), "Wrong email or password", Toast.LENGTH_SHORT).show();

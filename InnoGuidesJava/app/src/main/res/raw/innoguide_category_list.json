@@ -1,0 +1,121 @@
+[
+  {
+    "ID": 1,
+    "cname": "supermarkets",
+    "number_of_places": 2,
+    "icon": "image/supermarkets",
+    "colour": "\\xffffff"
+  },
+  {
+    "ID": 2,
+    "cname": "sport",
+    "number_of_places": 1,
+    "icon": "images/sport",
+    "colour": "\\xffffff"
+  },
+  {
+    "ID": 3,
+    "cname": "education",
+    "number_of_places": 2,
+    "icon": "images/education",
+    "colour": "\\xffffff"
+  },
+  {
+    "ID": 4,
+    "cname": "rest",
+    "number_of_places": 2,
+    "icon": "images/rest",
+    "colour": "\\xffffff"
+  },
+  {
+    "ID": 5,
+    "cname": "pyaterochka",
+    "number_of_places": 1,
+    "icon": "image/5ka",
+    "colour": "\\xafafaf"
+  },
+  {
+    "ID": 6,
+    "cname": "bar",
+    "number_of_places": 1,
+    "icon": "image/bar",
+    "colour": "\\xffffff"
+  },
+  {
+    "ID": 7,
+    "cname": "hostel",
+    "number_of_places": 0,
+    "icon": "-",
+    "colour": "-"
+  },
+  {
+    "ID": 8,
+    "cname": "book",
+    "number_of_places": 0,
+    "icon": "-",
+    "colour": "-"
+  },
+  {
+    "ID": 9,
+    "cname": "flowers",
+    "number_of_places": 0,
+    "icon": "-",
+    "colour": "-"
+  },
+  {
+    "ID": 10,
+    "cname": "kids",
+    "number_of_places": 0,
+    "icon": "-",
+    "colour": "-"
+  },
+  {
+    "ID": 11,
+    "cname": "police",
+    "number_of_places": 0,
+    "icon": "-",
+    "colour": "-"
+  },
+  {
+    "ID": 12,
+    "cname": "government",
+    "number_of_places": 0,
+    "icon": "-",
+    "colour": "-"
+  },
+  {
+    "ID": 13,
+    "cname": "scince",
+    "number_of_places": 0,
+    "icon": "-",
+    "colour": "-"
+  },
+  {
+    "ID": 14,
+    "cname": "bike",
+    "number_of_places": 0,
+    "icon": "-",
+    "colour": "-"
+  },
+  {
+    "ID": 15,
+    "cname": "beauty",
+    "number_of_places": 0,
+    "icon": "-",
+    "colour": "-"
+  },
+  {
+    "ID": 16,
+    "cname": "car",
+    "number_of_places": 0,
+    "icon": "-",
+    "colour": "-"
+  },
+  {
+    "ID": 17,
+    "cname": "health",
+    "number_of_places": 0,
+    "icon": "-",
+    "colour": "-"
+  }
+]

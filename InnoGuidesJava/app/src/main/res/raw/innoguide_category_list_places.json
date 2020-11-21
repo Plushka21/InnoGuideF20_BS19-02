@@ -1,0 +1,110 @@
+[
+  {
+    "cname": "education",
+    "pname": "Innopolis University"
+  },
+  {
+    "cname": "rest",
+    "pname": "ArtSpace"
+  },
+  {
+    "cname": "supermarkets",
+    "pname": "Pyaterochka"
+  },
+  {
+    "cname": "pyaterochka",
+    "pname": "Pyaterochka"
+  },
+  {
+    "cname": "sport",
+    "pname": "Sportcomplex"
+  },
+  {
+    "cname": "rest",
+    "pname": "Sportcomplex"
+  },
+  {
+    "cname": "supermarkets",
+    "pname": "Magnit"
+  },
+  {
+    "cname": "education",
+    "pname": "Innopolis Lyceum"
+  },
+  {
+    "cname": "hostel",
+    "pname": "Campus"
+  },
+  {
+    "cname": "bar",
+    "pname": "Cacio e vino"
+  },
+  {
+    "cname": "supermarkets",
+    "pname": "Bahetle"
+  },
+  {
+    "cname": "book",
+    "pname": "Dom knigi"
+  },
+  {
+    "cname": "hostel",
+    "pname": "Hostelinn"
+  },
+  {
+    "cname": "flowers",
+    "pname": "Magiya cvetov"
+  },
+  {
+    "cname": "bar",
+    "pname": "Patefon Faini Karlovny"
+  },
+  {
+    "cname": "kids",
+    "pname": "Kindergarten `Art Kids`"
+  },
+  {
+    "cname": "police",
+    "pname": "Police"
+  },
+  {
+    "cname": "government",
+    "pname": "City Hall"
+  },
+  {
+    "cname": "kids",
+    "pname": "Kindergarten"
+  },
+  {
+    "cname": "education",
+    "pname": "School"
+  },
+  {
+    "cname": "scince",
+    "pname": "Technopark named after Popov"
+  },
+  {
+    "cname": "bike",
+    "pname": "FunRide"
+  },
+  {
+    "cname": "beauty",
+    "pname": "Matur"
+  },
+  {
+    "cname": "car",
+    "pname": "InnoWashing"
+  },
+  {
+    "cname": "bar",
+    "pname": "bar 108"
+  },
+  {
+    "cname": "Pharmacy",
+    "pname": "health"
+  },
+  {
+    "cname": "Medical center",
+    "pname": "health"
+  }
+]
