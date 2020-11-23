@@ -1,18 +1,16 @@
 package com.example.innoguidesjava;
 
-import android.content.Context;
-import android.icu.number.Precision;
-import android.os.StrictMode;
+/**
+ * Class to read data from .json files
+ */
 
-import com.google.gson.Gson;
+import android.content.Context;
 
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.BufferedReader;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -20,14 +18,11 @@ import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
-import java.sql.*;
 
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
 import androidx.annotation.Nullable;
-
-import com.example.innoguidesjava.R;
 
 public class JSONHelper extends SQLiteOpenHelper{
 
@@ -36,27 +31,8 @@ public class JSONHelper extends SQLiteOpenHelper{
             super(context, "random.db", null, 1);
         }
 
+        // Create and return list with places
     public static List<Place> readPlaceJSONFile(Context context) throws IOException, JSONException {
-        Connection connection;
-        Statement stmnt;
-        String DB_NAME = "random.db";
-        String DB_PATH = context.getFilesDir().getPath() + DB_NAME;
-
-
-        StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
-        StrictMode.setThreadPolicy(policy);
-
-//        try{
-//            Class.forName("org.sqlite.JDBC");
-//            connection = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\bugue\\AndroidStudioProjects\\InnoGuidesJava\\app\\src\\main\\assets\\random.db");
-//            connection.setAutoCommit(false);
-//            functions.printMeanPlaceRating(connection);
-//        }
-//        catch (Exception e) {
-//            e.printStackTrace();
-//            System.err.println(e.getClass().getName() + ": " + e.getMessage());
-//            System.exit(0);
-//        }
 
         List<Place> places = new ArrayList<>();
 
@@ -122,7 +98,7 @@ public class JSONHelper extends SQLiteOpenHelper{
                 rating = Double.parseDouble(d.format(rating));
             }
 
-
+            // Get working time of each place
             String[] working_time = null;
             for (int j = 0; j < time.length(); j++){
                 JSONObject pTime= time.getJSONObject(j);
@@ -132,6 +108,7 @@ public class JSONHelper extends SQLiteOpenHelper{
                 }
             }
 
+            // Get names of photos
             String[] pictures = null;
             for (int j = 0; j < photos.length(); j++){
                 JSONObject pPic = photos.getJSONObject(j);
@@ -148,27 +125,8 @@ public class JSONHelper extends SQLiteOpenHelper{
         return places;
     }
 
+    // Create and return hashmap with places where key is name of place and value is element of call Place
     public static HashMap<String, Place> MapPlaceJSONFile(Context context) throws IOException, JSONException {
-        Connection connection;
-        Statement stmnt;
-        String DB_NAME = "random.db";
-        String DB_PATH = context.getFilesDir().getPath() + DB_NAME;
-
-
-        StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
-        StrictMode.setThreadPolicy(policy);
-
-//        try{
-//            Class.forName("org.sqlite.JDBC");
-//            connection = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\bugue\\AndroidStudioProjects\\InnoGuidesJava\\app\\src\\main\\assets\\random.db");
-//            connection.setAutoCommit(false);
-//            functions.printMeanPlaceRating(connection);
-//        }
-//        catch (Exception e) {
-//            e.printStackTrace();
-//            System.err.println(e.getClass().getName() + ": " + e.getMessage());
-//            System.exit(0);
-//        }
 
         HashMap<String, Place> places = new HashMap<>();
 
@@ -234,7 +192,7 @@ public class JSONHelper extends SQLiteOpenHelper{
                 rating = Double.parseDouble(d.format(rating));
             }
 
-
+            // Get working time of each place
             String[] working_time = null;
             for (int j = 0; j < time.length(); j++){
                 JSONObject pTime= time.getJSONObject(j);
@@ -244,6 +202,7 @@ public class JSONHelper extends SQLiteOpenHelper{
                 }
             }
 
+            // Get names of photos
             String[] pictures = null;
             for (int j = 0; j < photos.length(); j++){
                 JSONObject pPic = photos.getJSONObject(j);
@@ -260,12 +219,29 @@ public class JSONHelper extends SQLiteOpenHelper{
         return places;
     }
 
-    public static List<Event> readEventsJSONFile(Context context) throws IOException, JSONException{
-        List<Event> events = new ArrayList<>();
+    // Create and return list with events
+    public static ArrayList<Event> readEventsJSONFile(Context context) throws IOException, JSONException{
+        ArrayList<Event> events = new ArrayList<>();
 
+        String allEvents = readText(context, R.raw.innoguide_events);
+
+        JSONArray jsonRoot = new JSONArray(allEvents);
+
+        for (int i = 0; i < jsonRoot.length(); i++) {
+            JSONObject event = jsonRoot.getJSONObject(i);
+            int ID = event.getInt("ID");
+            String ename = event.getString("ename");
+            String date = event.getString("edate");
+            String time = event.getString("etime");
+            String place = event.getString("event_place");
+            String poster = event.getString("poster");
+
+            events.add(new Event(ID, ename, date, time, place, poster));
+        }
         return events;
     }
 
+    // Function to read text from file
     private static String readText(Context context, int resId) throws IOException {
         InputStream is = context.getResources().openRawResource(resId);
         BufferedReader br = new BufferedReader(new InputStreamReader(is));

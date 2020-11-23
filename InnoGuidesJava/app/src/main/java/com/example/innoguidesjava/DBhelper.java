@@ -1,5 +1,9 @@
 package com.example.innoguidesjava;
 
+/**
+ * Class to use database with users
+ */
+
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;

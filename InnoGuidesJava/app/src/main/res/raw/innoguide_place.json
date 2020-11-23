@@ -33,7 +33,7 @@
     "build_root": "Innopolis University",
     "description": "sometimes good",
     "address": "Sportivnaya st. 110",
-    "acoordinates": "55.747844,48.742623"
+    "acoordinates": "55.747918, 48.742976"
   },
   {
     "ID": 5,
@@ -55,7 +55,7 @@
   },
   {
     "ID": 7,
-    "pname": "bar 108",
+    "pname": "Bar 108",
     "owner": "Anatoliy",
     "build_root": null,
     "description": "cure for your soul",
@@ -100,10 +100,10 @@
   },
   {
     "ID": 12,
-    "pname": "Hostelinn",
+    "pname": "Hostelinno",
     "owner": "",
     "build_root": null,
-    "description": "Hostelinn",
+    "description": "Hostelinno",
     "address": "Sportivnaya st. 106",
     "acoordinates": "55.746745,48.743818"
   },
@@ -204,7 +204,7 @@
     "build_root": null,
     "description": "InnoWashing",
     "address": "Sportivnaya st. 106",
-    "acoordinates": "55.746746,48.743818"
+    "acoordinates": "55.746809, 48.743455"
   },
   {
     "ID": 24,

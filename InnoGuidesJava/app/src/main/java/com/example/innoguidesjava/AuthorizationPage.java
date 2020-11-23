@@ -1,5 +1,9 @@
 package com.example.innoguidesjava;
 
+/**
+ * Class for starting page of application with authorization page
+ */
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -12,6 +16,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class AuthorizationPage extends AppCompatActivity {
 
+    // Textfields and database with users
     private EditText email, password;
     DBhelper db;
 
@@ -27,6 +32,7 @@ public class AuthorizationPage extends AppCompatActivity {
 
         db = new DBhelper(this);
 
+        // Go to registration page
         reg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -35,21 +41,23 @@ public class AuthorizationPage extends AppCompatActivity {
             }
         });
 
+        // Try to authorize
         authorize.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 String Password = password.getText().toString();
                 String Email = email.getText().toString();
                 boolean checker = db.authorization(Email, Password);
+                // If email and password are valid load the map
                 if (checker) {
                     Intent loc = new Intent(AuthorizationPage.this, MainMap.class);
                     startActivity(loc);
-                } else
+                }
+                // Else show error message
+                else
                     Toast.makeText(getApplicationContext(), "Wrong email or password", Toast.LENGTH_SHORT).show();
             }
         });
 
     }
-
-
 }

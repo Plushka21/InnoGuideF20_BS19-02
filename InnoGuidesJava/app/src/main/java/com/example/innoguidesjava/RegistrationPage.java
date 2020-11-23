@@ -1,5 +1,9 @@
 package com.example.innoguidesjava;
 
+/**
+ * Page to create new users
+ */
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
@@ -29,9 +33,13 @@ public class RegistrationPage extends AppCompatActivity {
 
         toReg.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
+                // Get email and password from textfields
                 String Password = password.getText().toString();
                 String Email = email.getText().toString();
                 String CPassword = cPassword.getText().toString();
+
+                // If something in input strings is wrong error message will appear
+                // otherwise new account will be created and user will be automatically moved to authorization page
                 if (Password.isEmpty() || CPassword.isEmpty() || Email.isEmpty())
                     Toast.makeText(getApplicationContext(), "Some fields are empty", Toast.LENGTH_SHORT).show();
                 else if (!Password.equals(CPassword))

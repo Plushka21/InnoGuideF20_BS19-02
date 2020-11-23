@@ -1,12 +1,17 @@
 package com.example.innoguidesjava;
 
-import java.util.ArrayList;
+/**
+ * Class for places
+ */
+
+import com.google.android.gms.maps.model.MarkerOptions;
 
 public class Place {
-
+    // Each place has name, phone number, address, category it belongs to, rating, coordinates, working time and photos
     private String name, number, address, category;
     private double rating, c1, c2; // c1,c2 - coordinates
     private String[] working_time, photos;
+    private MarkerOptions marker;
 
     public Place(String name, String number, String address, double c1, double c2, String category, double rating, String[] working_time, String[] photos) {
         this.name = name;
@@ -22,10 +27,6 @@ public class Place {
 
     public String getName() {
         return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
     }
 
     public double getRating() {
@@ -58,5 +59,13 @@ public class Place {
 
     public String[] getPhotos(){
         return photos;
+    }
+
+    public void setMarker(MarkerOptions marker) {
+        this.marker = marker;
+    }
+
+    public MarkerOptions getMarker(){
+        return marker;
     }
 }

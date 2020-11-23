@@ -25,9 +25,114 @@
     "feedback": "gde stipa?"
   },
   {
-    "pname": "Pyaterochka",
+    "pname": "Cacio e vino",
+    "rating": 4.89,
+    "feedback": "Nice pizza"
+  },
+  {
+    "pname": "Bahetle",
+    "rating": 2.4,
+    "feedback": "shoping is nit for students :("
+  },
+  {
+    "pname": "Dom knigi",
+    "rating": 4.52,
+    "feedback": "Small selection of books. How many times I came, I did not find the book I needed, the sellers offer an order, but not all books can be bought on order. Now I only go there for stationery."
+  },
+  {
+    "pname": "Hostelinno",
+    "rating": 4.56,
+    "feedback": "We used the services of this hotel when we came to ski. Rented an excellent one-room apartment. And not at all expensive."
+  },
+  {
+    "pname": "Magiya cvetov",
+    "rating": 3.14,
+    "feedback": "Perfect assistants for the remote delivery of bouquets. The guys helped to choose a bouquet and pick up sweets, everything was delivered on time! The service is excellent. I will definitely contact you again!"
+  },
+  {
+    "pname": "Patefon Faini Karlovny",
+    "rating": 4.42,
+    "feedback": "Beautiful place. While waiting, we were treated to light snacks at the expense of the establishment. Thank you guys for preparing delicious breakfasts and caring for visitors."
+  },
+  {
+    "pname": "Kindergarten `Art Kids`",
+    "rating": 4.23,
+    "feedback": "Nice kindergarten since two years old, nice staff"
+  },
+  {
+    "pname": "Police",
     "rating": 5,
-    "feedback": ""
+    "feedback": ":>"
+  },
+  {
+    "pname": "Kindergarten",
+    "rating": 4.35,
+    "feedback": "The kindergarten of the future. Clean, comfortable, light, there is security, a swimming pool, a hall for music lessons, a gym, separate rooms for classes in English and Tatar languages, computer science, sciences, etc., good playgrounds on the street"
+  },
+  {
+    "pname": "School",
+    "rating": 4.21,
+    "feedback": "Excellent school, creative young teachers. The subjects of the information technology cycle and the English language are studied in depth"
+  },
+  {
+    "pname": "Technopark named after Popov",
+    "rating": 4.67,
+    "feedback": "Nice place for photos inside and outside. Inside there is a post office, several cafes, etc. And of course, all the most interesting It companies"
+  },
+  {
+    "pname": "FunRide",
+    "rating": 4.8,
+    "feedback": "Excellent rental! I advise everyone! Prices and equipment are pleasing! Everything is always in good condition! It is convenient to be near the ski!"
+  },
+  {
+    "pname": "Matur",
+    "rating": 4.59,
+    "feedback": "Very good"
+  },
+  {
+    "pname": "FunRide",
+    "rating": 1.5,
+    "feedback": "Terrible service, give out dead gear and regretted paraffin wax! I do not advise anyone!"
+  },
+  {
+    "pname": "InnoWashing",
+    "rating": 4.19,
+    "feedback": "They wash at the level, quickly enough and taking into account the wishes. I did not notice any stains on the windows. It may be a little expensive for someone, but in Innopolis you don't have to choose."
+  },
+  {
+    "pname": "Medical center",
+    "rating": 4.76,
+    "feedback": "Excellent medical center, wonderful staff"
+  },
+  {
+    "pname": "Pharmacy",
+    "rating": 5,
+    "feedback": "The only Pharmacy in Innopolis"
+  },
+  {
+    "pname": "Technopark named after Popov",
+    "rating": 4,
+    "feedback": "Great location in a great innovative city. There is an opportunity to work near the place where you live, while commuting to work in an unmanned taxi, to breathe fresh air. Near the University, an excellent medical center. No traffic jams, a kindergarten for a child is nearby. A city of 4000 people, you can talk about your problems with the mayor, ideas, just have lunch)"
+  },
+  {
+    "pname": "Matur",
+    "rating": 3,
+    "feedback": "The manicure is normal, I do not advise going to staining - many are allergic to paint"
+  },
+  {
+    "pname": "Cacio e vino",
+    "rating": 2.43,
+    "feedback": "The kitchen is not bad, but the prices do not correspond to the content. The pasta and soups are delicious, but don't make it to 5 points. You can visit a couple of times. It is advisable for the administration to revise the pricing policy and taste of the dishes."
+  },
+  {
+    "pname": "Technopark named after Popov",
+    "rating": 4.1,
+    "feedback": "Great park! A beautiful city!!! It differs from all existing cities) I recommend to visit)"
+  },
+  {
+    "pname": "ArtSpace",
+    "rating": 4.41,
+    "feedback": "it's very beautiful here"
   },
   {
     "pname": "Pyaterochka",

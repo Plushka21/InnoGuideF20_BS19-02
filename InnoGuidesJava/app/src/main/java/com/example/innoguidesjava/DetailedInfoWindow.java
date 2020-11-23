@@ -1,14 +1,12 @@
 package com.example.innoguidesjava;
 
+/**
+ * Class for detailed window with information about place
+ */
+
 import android.content.Intent;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
-
-import com.denzcoskun.imageslider.ImageSlider;
-import com.denzcoskun.imageslider.models.SlideModel;
-import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -23,10 +21,6 @@ import android.widget.ViewFlipper;
 
 import java.io.IOException;
 import java.io.InputStream;
-import java.util.ArrayList;
-import java.util.Calendar;
-import java.util.Date;
-import java.util.HashMap;
 
 
 public class DetailedInfoWindow extends AppCompatActivity {
@@ -57,6 +51,7 @@ public class DetailedInfoWindow extends AppCompatActivity {
                 R.anim.flipout_reverse);
 
         Intent intent = getIntent();
+        // Set name, address, phone number and working time of place
         bName.setText(intent.getStringExtra("Name"));
         bAddress.setText(intent.getStringExtra("Address"));
         bNumber.setText(intent.getStringExtra("Phone Number"));
@@ -95,22 +90,9 @@ public class DetailedInfoWindow extends AppCompatActivity {
 
         }
 
-
-        //PHOTO ADDING
-//        ImageSlider photos = findViewById(R.id.photos);
-//        ArrayList<SlideModel> list = new ArrayList<>();
-//        ImageView imageView = new ImageView(this);
-//        imageView.setImageResource(R.drawable.puniversity);
-//
-//        list.add(new SlideModel("https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Test-Logo.svg/783px-Test-Logo.svg.png"));
-//        list.add(new SlideModel("https://storage.theoryandpractice.ru/tnp/uploads/image_avatar/000/013/606/image/medium_2fee5a5a7e.jpg"));
-//        list.add(new SlideModel("https://i.ibb.co/fHwFyKY/sr.jpg"));
-//        list.add(new SlideModel("https://i.ibb.co/MgNyFxw/Tom.jpg"));
-//
-//        photos.setImageList(list, true);
-//
         flipper = findViewById(R.id.photos);
 
+        // Set photos
         String[] photos = intent.getStringArrayExtra("Photos");
         for (String photo : photos) {
             setViewFlipper(photo+".jpg");
@@ -122,6 +104,7 @@ public class DetailedInfoWindow extends AppCompatActivity {
         ratingBar.setRating(Float.parseFloat(rating));
     }
 
+    // Function to show photos
     public void setViewFlipper(String image){
         ImageView imageView = new ImageView(this);
         InputStream inputStream = null;
@@ -147,9 +130,6 @@ public class DetailedInfoWindow extends AppCompatActivity {
         flipper.addView(imageView);
         flipper.setFlipInterval(4000);
         flipper.setAutoStart(true);
-
-//        flipper.setInAnimation(this, android.R.anim.slide_in_left);
-//        flipper.setOutAnimation(this, android.R.anim.slide_out_right);
     }
 
     private void SwipeLeft() {

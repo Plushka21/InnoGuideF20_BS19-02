@@ -1,5 +1,9 @@
 package com.example.innoguidesjava;
 
+/**
+ * Class to show googlemap
+ */
+
 import com.directions.route.AbstractRouting;
 import com.directions.route.Route;
 import com.directions.route.RouteException;
@@ -38,6 +42,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
+import android.os.Parcelable;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 
@@ -74,7 +82,7 @@ public class MainMap extends AppCompatActivity
 
     private List<Place> places;
     private HashMap<String, Place> mapPlaces;
-    private List<Event> events;
+    private ArrayList<Event> events;
 
     //current and destination location objects
     Location myLocation = null;
@@ -84,15 +92,18 @@ public class MainMap extends AppCompatActivity
     //polyline object
     private List<Polyline> polylines = null;
 
+    Intent intent1;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        // Get all places and events
         places = new ArrayList<>();
         events = new ArrayList<>();
         try {
 //            places = JSONHelper.readPlaceJSONFile(this);
-//            events = JSONHelper.readEventsJSONFile(this);
             mapPlaces = JSONHelper.MapPlaceJSONFile(this);
+            events = JSONHelper.readEventsJSONFile(this);
         } catch (JSONException | IOException e) {
             e.printStackTrace();
         }
@@ -102,6 +113,7 @@ public class MainMap extends AppCompatActivity
         SupportMapFragment mapFragment =
                 (SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
+        intent1 = getIntent();
     }
 
     @Override
@@ -149,12 +161,13 @@ public class MainMap extends AppCompatActivity
                             }
                         })
 
+                        // Build route from your position to chosen place
                         .setNeutralButton("Build route", new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
                                 end = new LatLng(p.getC1(), p.getC2());
 
-                                map.clear();
+//                                map.clear();
 
                                 start = new LatLng(myLocation.getLatitude(), myLocation.getLongitude());
                                 //start route finding
@@ -171,29 +184,45 @@ public class MainMap extends AppCompatActivity
 
         LatLng inno = new LatLng(55.755, 48.74);
         map.moveCamera(CameraUpdateFactory.newLatLng(inno));
-        moveCamera(inno);
+        moveCamera(inno, 16f);
+
+        // Move camera to the place chosen from searchlist
+        if (intent1.getStringExtra("c1")!=null && intent1.getStringExtra("c2")!=null)
+        {
+            double c1=Double.parseDouble(intent1.getStringExtra("c1"));
+            double c2=Double.parseDouble(intent1.getStringExtra("c2"));
+            LatLng latLng=new LatLng(c1,c2);
+            map.moveCamera(CameraUpdateFactory.newLatLng(latLng));
+            moveCamera(latLng,17.7f);
+        }
     }
 
+    // Add custom markers using list of places
     public void addMarker(List<Place> places) {
         for (int i = 0; i < places.size(); i++) {
             String name = places.get(i).getName();
             String category = places.get(i).getCategory();
 
             if (!category.equals("")) {
-                map.addMarker(new MarkerOptions()
+                MarkerOptions marker = new MarkerOptions()
                         .position(new LatLng(places.get(i).getC1(), places.get(i).getC2()))
                         .title(name)
                         .zIndex(i)
-                        .icon(BitmapDescriptorFactory.fromBitmap(resizeMapIcons(category, 100, 100))));
+                        .icon(BitmapDescriptorFactory.fromBitmap(resizeMapIcons(category, 100, 100)));
+                places.get(i).setMarker(marker);
+                map.addMarker(marker);
             } else {
-                map.addMarker(new MarkerOptions()
+                MarkerOptions marker = new MarkerOptions()
                         .position(new LatLng(places.get(i).getC1(), places.get(i).getC2()))
                         .title(name)
-                        .zIndex(i));
+                        .zIndex(i);
+                places.get(i).setMarker(marker);
+                map.addMarker(marker);
             }
         }
     }
 
+    // Add custom markers using hashmap of places
     public void addMapMarker(HashMap<String, Place> mapPlaces) {
         int i = 0;
         for (Map.Entry entry: mapPlaces.entrySet()) {
@@ -215,6 +244,30 @@ public class MainMap extends AppCompatActivity
             }
             i++;
         }
+    }
+
+    // Go to searching page
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater=getMenuInflater();
+        inflater.inflate(R.menu.main_searchbar,menu);
+        MenuItem menuItem=menu.findItem(R.id.mainSearch);
+        menuItem.setOnMenuItemClickListener(new MenuItem.OnMenuItemClickListener() {
+            @Override
+            public boolean onMenuItemClick(MenuItem item) {
+                Intent intent = new Intent(MainMap.this, SearchBar.class);
+                startActivity(intent);
+                return false;
+            }
+        });
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    // Go to the page with events
+    public void onEventClick(View view){
+        Intent intent = new Intent(MainMap.this, EventList.class);
+        intent.putExtra("Events", events);
+        startActivity(intent);
     }
 
     /**
@@ -284,8 +337,8 @@ public class MainMap extends AppCompatActivity
                 .newInstance(true).show(getSupportFragmentManager(), "dialog");
     }
 
-    void moveCamera(LatLng latLng) {
-        float zoom = 16f;
+    // Zoom camera to some position
+    void moveCamera(LatLng latLng, float zoom) {
         map.moveCamera(CameraUpdateFactory.newLatLngZoom(latLng, zoom));
     }
 
@@ -303,11 +356,11 @@ public class MainMap extends AppCompatActivity
         } else {
 
             Routing routing = new Routing.Builder()
-                    .travelMode(AbstractRouting.TravelMode.DRIVING)
+                    .travelMode(AbstractRouting.TravelMode.WALKING)
                     .withListener(this)
                     .alternativeRoutes(true)
                     .waypoints(Start, End)
-                    .key("AIzaSyDJhMM-N-_onyee0mybDFEaeFT3PfMnY78")  //also define your api key here.
+                    .key("AIzaSyDKXL1wvYptzcTBKQeWz2lCJXi8forA6ig")  //also define your api key here.
                     .build();
             routing.execute();
         }
@@ -355,9 +408,7 @@ public class MainMap extends AppCompatActivity
                 int k = polyline.getPoints().size();
                 polylineEndLatLng = polyline.getPoints().get(k - 1);
                 polylines.add(polyline);
-
             }
-
         }
 
         //Add Marker on route starting position
